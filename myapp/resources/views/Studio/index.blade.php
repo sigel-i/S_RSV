@@ -20,30 +20,19 @@
         <div class="item">{{$studio->name}}</div>
         <div class="item">予約受付　TEL：{{$studio->tel}}</div>
         <div class="item">サイト：<a href="{{$studio->url}}">{{$studio->url}}</a></div>
-        <div class="item">部屋：
-            <tr>
-              <td>
               @if($studio->rooms != null)
                   @foreach ($studio->rooms as $room)
+        <div class="item">予約状況：
                       <tr><td>{{$room->name. "：" . $room->tatami_mats}}</td></tr>
                       @if($room->reserves != null)
                           @foreach ($room->reserves as $reserve)
-                              <tr><td>{{$room->name . "：" . $reserve->reserve->format('Y年m月d日') }}</td></tr>
+                              <tr><td>{{ "：" . $reserve->reserve->format('Y年m月d日') }}</td></tr><br>
                           @endforeach
                       @endif
                   @endforeach
               @endif
-              </td>
-            </tr>
-          </div>
-          <div class="item">予約日：
-            <tr>
-              <td>
-              </td>
-            </tr>
-          </div>
-      </div>
-   </li>
+         </div>
+     </li>
   </ul>
   @endforeach
  </div>
