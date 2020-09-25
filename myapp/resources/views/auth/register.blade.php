@@ -16,6 +16,10 @@
             <div class="card-text">
               <form method="POST" action="{{ route('register') }}">
                 @csrf
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="staff" name="staff">
+                  <label class="custom-control-label" for="staff">あなたは、スタジオのStaffですか？</label>
+                </div>
                 <div class="md-form">
                   <label for="name">ユーザー名</label>
                   <input class="form-control" type="text" id="name" name="name" required value="{{ old('name') }}">

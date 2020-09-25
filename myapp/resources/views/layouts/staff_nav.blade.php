@@ -6,7 +6,7 @@
 
 @guest
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('register') }}">新規登録</a>
+      <a class="nav-link" href="{{ route('/studio/add') }}">新規登録</a>
     </li>
 @endguest
 
@@ -17,8 +17,6 @@
 @endguest
 
 @auth
-<!-- @if($user->staff != 0)
-  <a href="http://localhost/studio/staff_nav"> -->
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"

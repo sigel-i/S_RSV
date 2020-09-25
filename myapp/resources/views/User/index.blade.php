@@ -17,12 +17,13 @@
   <a href="/register">登録</a>)</p>
   @endif
   <table>
-  <tr><th>ID</th><th>Name</th><th>Mail</th><th>password</th></tr>
+  <tr><th>ID</th><th>Name</th><th>Mail</th><th>Staff</th><th>password</th></tr>
   @foreach ($items as $item)
     <tr>
       <td>{{$item->id}}</td>
       <td>{{$item->name}}</td>
       <td>{{$item->email}}</td>
+      <td>{{$item->staff}}</td>
       <td>{{$item->password}}</td>
     </tr>
   @endforeach
