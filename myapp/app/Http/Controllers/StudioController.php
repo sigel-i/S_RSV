@@ -49,4 +49,16 @@ class StudioController extends Controller
     //     $this->validate($request, $validate_rules);
     //     return view('Studio.register', ['msg'=>'正しく入力されました']);
     // }
+
+    public function find(Request $request)
+    {
+        return view('studio.search',['input' => '']);
+    }
+
+    public function search(Request $request)
+    {
+        $studio = Studio::find($request->input);
+        $param = ['input' => $request->input, 'studio' => $studio];
+        return view('studio.search', $param);
+    }
 }
