@@ -17,7 +17,7 @@
               <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="staff" name="staff">
+                  <input type="checkbox" class="custom-control-input" id="staff" name="staff" value="1">
                   <label class="custom-control-label" for="staff">あなたは、スタジオのStaffですか？</label>
                 </div>
                 <div class="md-form">

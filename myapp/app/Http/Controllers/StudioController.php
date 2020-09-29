@@ -52,13 +52,13 @@ class StudioController extends Controller
 
     public function find(Request $request)
     {
-        return view('studio.search',['input' => '']);
+        return view('studio.find',['input' => '']);
     }
 
     public function search(Request $request)
     {
-        $studio = Studio::find($request->input);
+        $studio = Studio::nameEqual($request->input)->first();
         $param = ['input' => $request->input, 'studio' => $studio];
-        return view('studio.search', $param);
+        return view('studio.find', $param);
     }
 }

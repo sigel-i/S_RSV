@@ -17,8 +17,7 @@
 @endguest
 
 @auth
-<!-- @if($user->staff != 0)
-  <a href="http://localhost/studio/staff_nav"> -->
+
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"

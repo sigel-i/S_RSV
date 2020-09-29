@@ -17,7 +17,8 @@ Route::get('/sass', function () {
     return view('sass');
 });
 
-Route::get('/user',  'UserController@index');
+Route::get('/user',  'UserController@index')
+        ->middleware('auth');
 
 Route::get('/studio',  'StudioController@index');
 
@@ -37,4 +38,7 @@ Route::get('/reserve', 'ReserveController@index');
 
 Route::get('reserve/add', 'ReserveController@add');
 Route::post('/reserve/add', 'ReserveController@create');
+
+Route::get('studio/find', 'StudioController@find');
+Route::post('studio/find', 'StudioController@search');
 

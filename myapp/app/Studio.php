@@ -33,4 +33,9 @@ class Studio extends Model
   {
     return $this->hasMany('App\Comments',);
   }
+
+  public function scopeNameEqual($query, $str)
+  {
+    return $query->where('city', $str);
+  }
 }
