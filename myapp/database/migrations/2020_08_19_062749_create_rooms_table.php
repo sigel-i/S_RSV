@@ -17,7 +17,8 @@ class CreateRoomsTable extends Migration
             $table->integer('id');
             $table->string('name');
             $table->integer('studio_id');
-            $table->integer('tatami_mats');
+            $table->string('tatami_mats');
+            $table->string('Nop');
             $table->timestamps();
         });
     }

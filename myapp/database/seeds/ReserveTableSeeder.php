@@ -12,6 +12,7 @@ class ReserveTableSeeder extends Seeder
     public function run()
     {
         $param = [
+            'id' => 1,
             'artist_id' => '1',
             'room_id' => '1',
             'reserve' => '2020-10-10',
@@ -19,6 +20,7 @@ class ReserveTableSeeder extends Seeder
         DB::table('reserves')->insert($param);
 
         $param = [
+            'id' => 2,
             'artist_id' => '2',
             'room_id' => '3',
             'reserve' => '2020-10-20',
@@ -26,6 +28,7 @@ class ReserveTableSeeder extends Seeder
         DB::table('reserves')->insert($param);
 
         $param = [
+            'id' => 3,
             'artist_id' => '3',
             'room_id' => '5',
             'reserve' => '2020-10-30',

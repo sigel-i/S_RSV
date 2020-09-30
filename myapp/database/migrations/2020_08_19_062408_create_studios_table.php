@@ -19,6 +19,7 @@ class CreateStudiosTable extends Migration
             $table->string('email');
             $table->string('pref');
             $table->string('city');
+            $table->string('tel');
             $table->string('url');
             $table->string('image_url');
             $table->timestamps();
