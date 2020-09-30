@@ -14,7 +14,7 @@ class CreateStudiosTable extends Migration
     public function up()
     {
         Schema::create('studios', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->string('name');
             $table->string('email');
             $table->string('pref');

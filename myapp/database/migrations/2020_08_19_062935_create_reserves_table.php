@@ -14,7 +14,7 @@ class CreateReservesTable extends Migration
     public function up()
     {
         Schema::create('reserves', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->integer('room_id');
             $table->integer('artist_id');
             $table->datetime('reserve');
