@@ -12,7 +12,7 @@ class StudioTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'id'=>1,
+            // 'id'=>1,
             'name' => 'リンキィディンクスタジオお茶の水・神保町',
             'email' => 'test@studio.jp',
             'pref' => '東京都',
@@ -24,7 +24,7 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
-            'id'=>2,
+            // 'id'=>2,
             'name' => 'サウンドスタジオノア',
             'email' => 'tes2@studio.jp',
             'pref' => '東京都',

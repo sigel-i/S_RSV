@@ -12,7 +12,7 @@ class RoomTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'id'=>1,
+            // 'id'=>1,
             'name' => '1st',
             'studio_id' => '1',
             'tatami_mats' => '22帖',
@@ -21,7 +21,7 @@ class RoomTableSeeder extends Seeder
         DB::table('rooms')->insert($param);
 
         $param = [
-            'id'=>2,
+            // 'id'=>2,
             'name' => '2st',
             'studio_id' => '1',
             'tatami_mats' => '11帖',
@@ -30,7 +30,7 @@ class RoomTableSeeder extends Seeder
         DB::table('rooms')->insert($param);
 
         $param = [
-            'id'=>3,
+            // 'id'=>3,
             'name' => 'A3st',
             'studio_id' => '2',
             'tatami_mats' => '7.5帖',
@@ -39,7 +39,7 @@ class RoomTableSeeder extends Seeder
         DB::table('rooms')->insert($param);
 
         $param = [
-            'id'=>4,
+            // 'id'=>4,
             'name' => 'A5st',
             'studio_id' => '2',
             'tatami_mats' => '10帖',
