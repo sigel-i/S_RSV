@@ -11,8 +11,16 @@ class StudioController extends Controller
 {
     public function index(Request $request)
     {
+        if(empty($request->all())) {
+            $studios = Studio::all();
+        } else {
+            $studios = Studio::where('city',$request->city)->get();
+            foreach($studios as $studio) {
+                $rooms = $studio->rooms
+                foreach($rooms as $room)
+            }
+        }
         // $hasStudios = Studio::has('rooms')->get();
-        $studios = Studio::all();
         // $param = ['studios' => $studios];
         // $studios = Studio::with('rooms')->get();
         // $rooms = Room::with('studio')->get();
@@ -50,15 +58,10 @@ class StudioController extends Controller
     //     return view('Studio.register', ['msg'=>'正しく入力されました']);
     // }
 
-    public function find(Request $request)
+    public function search()
     {
-        return view('studio.find',['input' => '']);
+        return view('studio.search');
     }
 
-    public function search(Request $request)
-    {
-        $studio = Studio::nameEqual($request->input)->first();
-        $param = ['input' => $request->input, 'studio' => $studio];
-        return view('studio.find', $param);
-    }
+
 }
