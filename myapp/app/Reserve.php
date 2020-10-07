@@ -8,14 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Reserve extends Model
 {
     protected $dates = [
-        'reserve'
+        'rsvday',
+        'rsvtime_first',
+        'rsvtime_end'
     ];
 
     protected $guarded = array('id');
 
     public static $rules = array(
         'room_id' => 'required',
-        'reserve' => 'reqired',
+        'rsvday' => 'reqired',
+        'rsvtime_first' => 'reqired',
+        'rsvtime_end' => 'reqired',
     );
 
     public function getData()
@@ -27,5 +31,4 @@ class Reserve extends Model
     {
       return $this->belongsTo('App\Room');
     }
-
 }

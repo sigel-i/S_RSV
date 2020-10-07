@@ -1,12 +1,6 @@
 @extends('layouts.app')
 @extends('layouts.nav')
 
-@section('nav')
-@endsection
-
-@section('menubar')
-  @parent
-@endsection
 
 @section('content')
 <div class="summary">
@@ -23,10 +17,10 @@
               @if($studio->rooms != null)
                   @foreach ($studio->rooms as $room)
         <div class="item">予約状況：
-                      <tr><td>{{$room->name. "：" . $room->tatami_mats}}</td></tr>
+                      <tr><td>{{$room->name. "：" . $room->tatami_mats . "：" . $room->roomsize}}</td></tr>
                       @if($room->reserves != null)
                           @foreach ($room->reserves as $reserve)
-                              <tr><td>{{ "：" . $reserve->reserve->format('Y年m月d日') }}</td></tr><br>
+                              <tr><td>{{ "：" . $reserve->rsvday->format('Y年m月d日') .  "：" . $reserve->rsvtime_first->format('G:i').  "~" . $reserve->rsvtime_end->format('G:i')}}</td></tr><br>
                           @endforeach
                       @endif
                   @endforeach

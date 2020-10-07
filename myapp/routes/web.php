@@ -39,6 +39,7 @@ Route::get('/reserve', 'ReserveController@index');
 Route::get('reserve/add', 'ReserveController@add');
 Route::post('/reserve/add', 'ReserveController@create');
 
-Route::get('studio/find', 'StudioController@find');
-Route::post('studio/find', 'StudioController@search');
+
+Route::get('studio/search', 'StudioController@search');
+
 

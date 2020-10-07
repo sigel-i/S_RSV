@@ -17,7 +17,9 @@ class CreateReservesTable extends Migration
             $table->increments('id');
             $table->integer('room_id');
             $table->integer('artist_id');
-            $table->datetime('reserve');
+            $table->date('rsvday');
+            $table->time('rsvtime_first');
+            $table->time('rsvtime_end');
             $table->timestamps();
         });
     }
