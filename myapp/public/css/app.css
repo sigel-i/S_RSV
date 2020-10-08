@@ -94,6 +94,15 @@ label2 {
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
 
+label3 {
+  position: absolute;
+  top: 0px;
+  font-size: 20px;
+  padding: 0 10px;
+  background-color: black;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
 .active {
   top: -25px;
   font-size: 20px;

@@ -102,6 +102,18 @@ label2 {
               font-size .2s ease-in-out;
 }
 
+label3 {
+  position: absolute;
+  top: 0px;
+  font-size: 20px;
+  padding: 0 10px;
+  background-color: black;
+  -webkit-transition: top .2s ease-in-out,
+                      font-size .2s ease-in-out;
+  transition: top .2s ease-in-out,
+              font-size .2s ease-in-out;
+}
+
 .active {
   top: -25px;
   font-size: 20px;

@@ -12,12 +12,12 @@ class StudioController extends Controller
     public function index(Request $request)
     {
         $search1 = $request->input('city');
-        $search2 = $request->input('roomsize');
+        $search2 = $request->input('roomcount');
         $search3 = $request->input('rsvday');
                 // dd($request);
         if(empty($request->all())) {
             $studios = Studio::all();
-        } elseif(!empty($search1)) {
+        } elseif($request->has('city') && $search1 != ('指定なし')) {
             $studios = Studio::where('city', 'like', '%'.$search1.'%')->get();
         } elseif(!empty($search2)) {
             $studios = Studio::whereHas('rooms', function($q) use ($search2) {
