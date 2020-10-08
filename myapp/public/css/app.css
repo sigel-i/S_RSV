@@ -72,13 +72,13 @@ div.wrap {
 
 div.wrap div {
   position: relative;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 label {
   position: absolute;
   top: 0;
-  font-size: 30px;
+  font-size: 20px;
   margin: 10px;
   padding: 0 10px;
   background-color: black;
@@ -91,24 +91,95 @@ label {
 }
 
 input[type=text] {
-  width: 100%;
-  padding: 20px;
+  width: 80%;
+  padding: 10px;
   border: 1px solid white;
   font-size: 20px;
   background-color: black;
   color: white;
 }
 
-input[type=text]:focus {
-  outline: none;
+input[type=password] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.btn-flat-border {
+  width: 80%;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: black;
+  border: solid 2px #4169E1;
+  background-color: #4169E1;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.btn-flat-border:hover {
+  background-color: #B0C4DE;
+  border-color: #B0C4DE;
+  color: black;
 }
 
 .click-down {
   width: 50px;
   transition: 0.2s;
+  border-radius: 0px;
 }
 
 .click-down:active {
   transform: translateY(2px);
+}
+
+/*Checkboxes styles*/
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px "Open Sans", Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type=checkbox] + label:last-child {
+  margin-bottom: 0;
+}
+
+input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+input[type=checkbox]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
 }
 

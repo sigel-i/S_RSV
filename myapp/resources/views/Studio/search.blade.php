@@ -15,8 +15,16 @@
       <input id="roomsize" type="text" name="roomsize">
     </div>
     <div>
-      <label for="rsvday">利用日と時間を選ぶ</label>
+      <label for="rsvday">利用日を選ぶ</label>
       <input id="rsvday" type="text" name="rsvday">
+    </div>
+    <div>
+      <label for="rsvtime_first">開始時間を選ぶ</label>
+      <input id="rsvtime_first" type="text" name="rsvtime_first">
+    </div>
+    <div>
+      <label for="rsvtime_end">終了時間を選ぶ</label>
+      <input id="rsvtime_end" type="text" name="rsvtime_end">
     </div>
     <input class="click-down" type="submit" value="検索">
   </div>
