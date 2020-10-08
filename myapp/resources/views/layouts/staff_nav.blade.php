@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand navbar-dark elegant-color-dark">
 
-  <a class="navbar-brand" href="/"> Studio  _RSV</i></a>
+  <a class="navbar-brand" href="studio/search"> Studio_RSV</i></a>
 
   <ul class="navbar-nav ml-auto">
 
 @guest
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('/studio/add') }}">新規登録</a>
+      <a class="nav-link" href="{{ route('studio/add') }}">新規登録</a>
     </li>
 @endguest
 

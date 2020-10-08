@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark elegant-color-dark">
 
-  <a class="navbar-brand" href="studio/search"> Studio  _RSV</i></a>
+  <a class="navbar-brand" href="studio/search"> Studio_RSV</i></a>
 
   <ul class="navbar-nav ml-auto">
 
@@ -17,7 +17,6 @@
 @endguest
 
 @auth
-
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"

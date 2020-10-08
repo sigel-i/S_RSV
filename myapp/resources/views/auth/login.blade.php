@@ -7,6 +7,7 @@
   @csrf
   <div class="wrap">
   <h1>ログイン</h1>
+  @include('error_card_list')
   <div>
     <label for="email">メールアドレス</label>
     <input type="text" id="email" name="email" required value="{{ old('email') }}">
