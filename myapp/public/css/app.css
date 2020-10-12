@@ -2,9 +2,15 @@
   padding: 24px 16px 48px;
 }
 
-h2 {
+.hit-the-search {
+  color: #fff;
+  font-size: 2em;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+}
+
+.hit-the-search {
   text-align: center;
-  font-size: 18pt;
 }
 
 .top {
@@ -13,6 +19,7 @@ h2 {
 
 .s_ul {
   padding: 0px 40px;
+  border-top: 1px solid #ccc;
   margin-top: 12px;
   display: flex;
   flex-wrap: nowrap;
@@ -20,7 +27,6 @@ h2 {
 
 .s_li {
   width: 100%;
-  border-top: 1px solid #eaeaea;
   padding: 24px 16px;
   list-style: none;
 }
@@ -38,7 +44,15 @@ h2 {
   align-items: center;
 }
 
+.container p {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
 .img_size {
+  position: relative;
+  top: 20px;
   width: 300px;
   height: auto;
 }
@@ -62,7 +76,7 @@ h3 {
 }
 
 div.wrap {
-  width: 500px;
+  width: 520px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,7 +124,7 @@ label3 {
 
 input[type=text] {
   width: 80%;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid white;
   font-size: 20px;
   background-color: black;
@@ -127,7 +141,8 @@ input[type=password] {
 }
 
 .btn-flat-border {
-  width: 80%;
+  width: 100%;
+  text-align: center;
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;

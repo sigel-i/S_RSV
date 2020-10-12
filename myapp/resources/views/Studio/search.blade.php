@@ -1,11 +1,12 @@
 @extends('layouts.app')
 @extends('layouts.nav')
 
+
 @section('content')
 <form action="/studio" method="get">
   @csrf
   <div class="wrap">
-    <h1>音楽スタジオを検索して、<br>利用したい時間を確認しよう！</h1>
+    <h2>音楽スタジオを検索して、<br>利用できるスタジオを確認しよう！</h2>
       <div class="center">
         <label2 for="city">エリアを選択する</label>
         <select name="city" id="city" class="custom-select sources" placeholder="Source Type">
@@ -22,23 +23,9 @@
           @endforeach
         </select>
       </div>
-      <!-- <div>
-        <label for="rsvday">利用日を選ぶ</label>
-        <input id="rsvday" type="text" name="rsvday">
-      </div> -->
-      <div class="md-form">
-        <input type="text" id="rsvday" class="form-control datepicker">
-        <label3 for="rsvday">利用日を選ぶ</label>
+      <div class="center">
+        <input class="btn-flat-border" type="submit" value="検索">
       </div>
-      <div>
-        <label for="rsvtime_first">開始時間を選ぶ</label>
-        <input id="rsvtime_first" type="text" name="rsvtime_first">
-      </div>
-      <div>
-        <label for="rsvtime_end">終了時間を選ぶ</label>
-        <input id="rsvtime_end" type="text" name="rsvtime_end">
-      </div>
-    <input class="btn-flat-border" type="submit" value="検索">
   </div>
   </form>
 @endsection

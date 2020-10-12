@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@extends('layouts.nav')
+@extends(Auth::check() && Auth::user()->staff ? 'layouts.staff_nav' : 'layouts.nav')
 
 @section('nav')
 @endsection

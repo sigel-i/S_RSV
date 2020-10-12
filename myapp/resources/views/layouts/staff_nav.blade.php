@@ -25,7 +25,7 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
         <button form="logout-button" class="dropdown-item" type="submit">
-          ログアウト
+          ログアウトスタッフよう
         </button>
       </div>
     </li>

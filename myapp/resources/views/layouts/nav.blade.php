@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark elegant-color-dark">
 
-  <a class="navbar-brand" href="studio/search"> Studio_RSV</i></a>
+  <a class="navbar-brand" href="/studio/search"> Studio_RSV</i></a>
 
   <ul class="navbar-nav ml-auto">
 

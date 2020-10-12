@@ -12,8 +12,7 @@ class StudioController extends Controller
     public function index(Request $request)
     {
         $search1 = $request->input('city');
-        $search2 = $request->input('roomcount');
-        $search3 = $request->input('rsvday');
+        $search2 = $request->input('roomsize');
                 // dd($request);
         if(empty($request->all())) {
             $studios = Studio::all();
@@ -21,11 +20,7 @@ class StudioController extends Controller
             $studios = Studio::where('city', 'like', '%'.$search1.'%')->get();
         } elseif(!empty($search2)) {
             $studios = Studio::whereHas('rooms', function($q) use ($search2) {
-                $q->where('roomsize', 'like', '%'.$search2.'%');
-            })->get();
-        } elseif(!empty($search3)) {
-            $studios = Room::whereHas('rsvday', function($q) use ($search3) {
-                $q->whereDate('rsvday', '<>', $search3->format('Y/m/d'));
+                $q->where('roomsize', '>=', '%'.$search2.'%');
             })->get();
             \Debugbar::info($studios);
         }
