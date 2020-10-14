@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Room;
+use App\Comments;
 use Illuminate\Database\Eloquent\Model;
 
 class Studio extends Model
@@ -31,7 +32,7 @@ class Studio extends Model
 
   public function comments()
   {
-    return $this->hasMany('App\Comments',);
+    return $this->hasMany('App\Comments');
   }
 
   // public function scopeNameEqual($query, $str)

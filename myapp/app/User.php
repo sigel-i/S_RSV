@@ -2,6 +2,9 @@
 
 namespace App;
 
+use App\Studio;
+use App\Room;
+use App\Comments;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

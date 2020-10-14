@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Studio;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Comments extends Model
@@ -27,6 +29,6 @@ class Comments extends Model
 
     public function studio()
     {
-        return $this->hasOne('App\Studio',);
+        return $this->belongsTo('App\Studio');
     }
 }

@@ -21,12 +21,12 @@ class Room extends Model
 
     public function studio()
     {
-      return $this->belongsTo('App\Studio');
+      return $this->hasone('App\Studio');
     }
 
     public function reserves()
     {
-        return $this->hasMany('App\Reserve',);
+        return $this->hasMany('App\Reserve');
     }
 
 }
