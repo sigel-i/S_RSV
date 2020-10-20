@@ -16,8 +16,8 @@ class Studio extends Model
     'pref' => 'string',
     'city' => 'string',
     'url' =>  'active_url',
-    'tel' => 'required|regex:/(01)[0-9]{9}/',
-    'image_url' => 'required|image',
+    'tel' => 'required|min:11|numeric',
+    'image_url' => 'required|active_url',
   );
 
   public function getData()

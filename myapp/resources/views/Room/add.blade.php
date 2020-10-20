@@ -1,13 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="add">
-    <div class="row">
-      <div class="mx-auto col col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
-        <h1 class="text-center"><a class="text-dark" href="/"></a></h1>
-        <div class="card mt-3">
-          <div class="card-body text-center">
-            <h2 class="h3 card-title text-center mt-2">新規登録</h2>
+<form action="/room/add" method="post">
+@csrf
+    <div class="error">
     @if (count($errors) > 0)
     <div>
         <ul>
@@ -17,17 +13,30 @@
         </ul>
     </div>
     @endif
-    <div class="card-text">
-      <form action="/studio/add" method="post">
-        @csrf
-        <div class="md-form">
+    <div class="wrap">
+        <h1>スタジオ部屋・新規登録</h1>
+        <div class="center">
+          <label for="studio_id">スタジオ名</label>
+              <select name="studio_id" id="studio_id" class="custom-select sources">
+                @foreach($studios as $key => $studio)
+                <option value="{{ $key }}">{{ $studio->name }}</option>
+                @endforeach
+              </select>
+        </div>
+        <div class="center">
             <label for="name">部屋名</label>
-            <input class="form-control" type="text" id="name" name="name" required value="{{ old('name') }}">
+            <input type="text" id="name" name="name" required value="{{ old('name') }}">
         </div>
-        <div class="md-form">
-            <label for="name">部屋の広さ</label>
-            <input class="form-control" type="text" id="tatami_mats" name="tatami_mats" required value="{{ old('tatami_mats') }}">
+        <div class="center">
+          <label for="tatami_mats">部屋の広さ</label>
+          <input type="text" id="tatami_mats" name="tatami_mats" required value="{{ old('tatami_mats') }}">
         </div>
-        <button class="btn btn-block heavy-rain-gradient mt-2 mb-2" type="submit">新規登録</button>
-        </form>
-    </div>
+        <div class="center">
+          <label for="roomsize">部屋人数</label>
+          <input type="text" id="roomsize" name="roomsize" required value="{{ old('roomsize') }}">
+        </div>
+        <div class="center">
+          <button class="btn-flat-border" type="submit">新規登録</button>
+        </div>
+      </div>
+</form>

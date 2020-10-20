@@ -39,6 +39,7 @@ class StudioController extends Controller
 
     public function create(Request $request)
     {
+        // dd($request);
         $this->validate($request, Studio::$rules);
         $studio = new Studio;
         $form = $request->all();

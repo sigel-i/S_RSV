@@ -12,6 +12,7 @@ class Room extends Model
         'name' => 'reqired',
         'studio_id' => 'required',
         'tatami_mats' => 'required',
+        'roomsize' => 'required',
     );
 
     public function getData()

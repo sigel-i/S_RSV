@@ -9,7 +9,7 @@
     <h2>音楽スタジオを検索して、<br>利用できるスタジオを確認しよう！</h2>
       <div class="center">
         <label2 for="city">エリアを選択する</label>
-        <select name="city" id="city" class="custom-select sources" placeholder="Source Type">
+        <select name="city" id="city" class="custom-select sources">
           @foreach(config('array_area') as $key => $score)
           <option value="{{ $key }}">{{ $score['area'] }}</option>
           @endforeach
@@ -17,7 +17,7 @@
       </div>
       <div class="center">
         <label2 for="roomsize">利用人数を選択する</label>
-        <select name="roomsize" id="roomsize" class="custom-select sources" placeholder="Source Type">
+        <select name="roomsize" id="roomsize" class="custom-select sources">
           @foreach(config('array_roomcount') as $key => $score)
             <option value="{{ $key }}">{{ $score['roomcount'] }}</option>
           @endforeach

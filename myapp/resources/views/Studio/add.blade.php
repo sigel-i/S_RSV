@@ -4,13 +4,15 @@
 @section('content')
     <form action="/studio/add" method="post">
     @csrf
-    @if (count($errors) > 0)
-    <div>
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
+    <div class="error">
+        @if (count($errors) > 0)
+        <div>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
     </div>
     @endif
     <div class="wrap">
@@ -43,7 +45,9 @@
             <label for="image_url">トップページ画像URL</label>
             <input type="text" id="image_url" name="image_url" required value="{{ old('image_url') }}">
         </div>
+        <div class="center">
         <button class="btn-flat-border" type="submit">新規登録</button>
+        </div>
     </div>
     </form>
 </div>

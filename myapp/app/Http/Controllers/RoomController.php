@@ -18,11 +18,13 @@ class RoomController extends Controller
 
     public function add(Request $request)
     {
-        return view('room.add');
+        $studios = Studio::with('rooms')->get();
+        return view('room.add', ['studios' => $studios,]);
     }
 
     public function create(Request $request)
     {
+        // dd($request);
         $this->validate($request, Room::$rules);
         $room = new Room;
         $form = $request->all();

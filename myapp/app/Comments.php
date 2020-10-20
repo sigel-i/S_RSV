@@ -14,7 +14,7 @@ class Comments extends Model
         'content' => 'reqired',
         'stars' => 'reqired',
         'studio_id' => 'required',
-        'user_id' => 'required',
+        // 'user_id' => 'required',
     );
 
     public function getData()
