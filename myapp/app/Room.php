@@ -9,7 +9,7 @@ class Room extends Model
     protected $guarded = array('id');
 
     public static $rules = array(
-        'name' => 'reqired',
+        'name' => 'required',
         'studio_id' => 'required',
         'tatami_mats' => 'required',
         'roomsize' => 'required',
@@ -22,7 +22,7 @@ class Room extends Model
 
     public function studio()
     {
-      return $this->hasone('App\Studio');
+      return $this->belongsTo('App\Studio');
     }
 
     public function reserves()

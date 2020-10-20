@@ -34,7 +34,12 @@ class CommentController extends Controller
         $comment = new Comments;
         $form = $request->all();
         unset($form['_token']);
-        $comment->fill($form)->save;
-        return redirect('/review');
+        // $comment->fill($form)->save;
+        $comment->content = $request->content;
+        $comment->stars = $request->stars;
+        $comment->studio_id = $request->studio_id;
+        // $comment->user_id = $request->user_id;
+        $comment->save();
+        return redirect('/studio/comment');
     }
 }

@@ -24,7 +24,7 @@ class RoomController extends Controller
 
     public function create(Request $request)
     {
-        // dd($request);
+        dd($request);
         $this->validate($request, Room::$rules);
         $room = new Room;
         $form = $request->all();

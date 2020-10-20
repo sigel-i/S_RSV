@@ -11,6 +11,7 @@ class StudioController extends Controller
 {
     public function index(Request $request)
     {
+        // dd($request);
         $search1 = $request->input('city');
         $search2 = $request->input('roomsize');
                 // dd($request);

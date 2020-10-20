@@ -43,10 +43,9 @@ Route::post('/reserve/add', 'ReserveController@create');
 Route::get('studio/search', 'StudioController@search');
 
 
-Route::get('studio/', 'CommentController@create');
+Route::get('studio/comment', 'CommentController@create');
 Route::get('studio/comment', 'CommentController@comment');
 
 Route::get('studio/review', 'CommentController@index');
-
-Route::post('/studio/review', 'commentController@create');
+Route::post('/studio/review', 'CommentController@create');
 

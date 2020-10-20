@@ -11,8 +11,8 @@ class Comments extends Model
     protected $guarded = array('id');
 
     public static $rules = array(
-        'content' => 'reqired',
-        'stars' => 'reqired',
+        'content' => 'required',
+        'stars' => 'required',
         'studio_id' => 'required',
         // 'user_id' => 'required',
     );
