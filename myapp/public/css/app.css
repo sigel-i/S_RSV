@@ -24,7 +24,7 @@
 .s_ul {
   padding: 0px 40px;
   border-top: 1px solid #ccc;
-  margin-top: 12px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -33,6 +33,25 @@
   width: 100%;
   padding: 24px 16px;
   list-style: none;
+}
+
+.r_ul {
+  padding: 0px 40px;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.r_li {
+  width: 100%;
+  padding: 24px 16px;
+  list-style: none;
+}
+
+.review_s {
+  padding: 0px 40px;
+  line-height: 50px;
 }
 
 .text {
@@ -64,13 +83,19 @@
 body {
   font-family: "Lato", sans-serif;
   color: white;
-  background-color: black;
+  background-color: #131313;
 }
 
 h1 {
   font-size: 30px;
   margin: 0px;
   padding: 0px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 30px;
+  overflow-wrap: break-word;
 }
 
 h3 {
@@ -99,7 +124,7 @@ label {
   font-size: 20px;
   margin: 10px;
   padding: 0 10px;
-  background-color: black;
+  background-color: #131313;
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
 
@@ -108,7 +133,7 @@ label2 {
   top: 10px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: black;
+  background-color: #131313;
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
 
@@ -117,7 +142,7 @@ label3 {
   top: 0px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: black;
+  background-color: #131313;
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
 
@@ -131,7 +156,7 @@ input[type=text] {
   padding: 7px;
   border: 1px solid white;
   font-size: 18px;
-  background-color: black;
+  background-color: #131313;
   color: white;
 }
 
@@ -140,7 +165,7 @@ input[type=password] {
   padding: 10px;
   border: 1px solid white;
   font-size: 20px;
-  background-color: black;
+  background-color: #131313;
   color: white;
 }
 
@@ -149,7 +174,7 @@ input[type=password] {
   padding: 10px;
   border: 1px solid white;
   font-size: 16px;
-  background-color: black;
+  background-color: #131313;
   color: white;
 }
 
@@ -159,7 +184,7 @@ input[type=password] {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: black;
+  color: #131313;
   border: solid 2px #4169E1;
   background-color: #4169E1;
   border-radius: 3px;
@@ -169,7 +194,7 @@ input[type=password] {
 .btn-flat-border:hover {
   background-color: #B0C4DE;
   border-color: #B0C4DE;
-  color: black;
+  color: #131313;
 }
 
 .click-down {

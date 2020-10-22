@@ -35,6 +35,10 @@ class Studio extends Model
     return $this->hasMany('App\Comments');
   }
 
+  public function user()
+  {
+    return $this->belongsTo('App\User');
+  }
   // public function scopeNameEqual($query, $str)
   // {
   //   return $query->where('city', $str);

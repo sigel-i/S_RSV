@@ -8,12 +8,13 @@
   <div class="wrap">
       <h1>レビュー投稿</h1>
       @include('error_card_list')
-      <div class="center" for="user_id" name="user_id" id="user_id" value="{{ Auth::id() }}">ユーザーID：{{ Auth::id() }}</div>
+      <div class="center">
+      <input type="hidden" for="user_id" name="user_id" id="user_id" value="{{ Auth::id() }}">ユーザーID：{{ Auth::id() }}</div>
       <div class="center">
         <label for="studio_id">スタジオ名</label>
         <select name="studio_id" id="studio_id" class="custom-select sources">
               @foreach($studios as $key => $studio)
-              <option value="{{ $key }}">{{ $studio->name }}</option>
+              <option value="{{ $studio->id }}">{{ $studio->name }}</option>
               @endforeach
             </select>
       </div>
