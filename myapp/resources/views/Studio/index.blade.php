@@ -11,6 +11,7 @@
       <div><img alt="" src="{{$studio->image_url}}"  class="img_size" ></div>
    <li class="s_li">
       <div class="container">
+        <div class="item"><a href="studio/comment">⭐️{{$studio->name}}</a></div>
         <div class="item"><p>{{$studio->name}}</p></div>
         <div class="item">予約受付　TEL：{{$studio->tel}}</div>
         <div class="item">サイト：<a href="{{$studio->url}}">{{$studio->url}}</a></div>
