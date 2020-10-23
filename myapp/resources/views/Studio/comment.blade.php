@@ -11,11 +11,22 @@
         <div class="review_s"><img alt="" src="{{$studio->image_url}}"  class="img_size" >
         <h2><p>{{$studio->name}}</p></h2></div>
     <li class="r_li">
-        <div class="container">
-          <div class="item">{{$recount}}</div>
-          <div class="item">{{$staravg}}</div>
-          <div class="item">{{optional($studio->user)->name}}</div>
-          <div class="item">{{$studio->content}}</div>
+    <div class="container">
+          @foreach($reviewcount as $review)
+            @if($review->studio_id === $studio->id)
+              @foreach($staravg as $avg)
+                @if($avg->studio_id === $studio->id)
+                  <div class="item">⭐️{{$avg->stars_avg}}（{{$review->stars_count}} 件）</div>
+                @endif
+              @endforeach
+            @endif
+          @endforeach
+          @foreach($comments as $comment)
+            @if($comment->studio_id === $studio->id)
+              <div class="item">{{$comment->user->name}}</div>
+              <div class="item">{{$comment->content}}</div>
+            @endif
+          @endforeach
         </div>
     </li>
   </ul>

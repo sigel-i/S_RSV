@@ -6,6 +6,7 @@ use App\Studio;
 use App\Reserve;
 use App\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class StudioController extends Controller
 {
@@ -20,20 +21,29 @@ class StudioController extends Controller
     } else {
         $studios = Studio::all();
     }
-    // dd();
+    // dd($studios);
     // 部屋の利用人数で検索する場合、mapとfilterを使って検索する。検索しない場合はmapだけ
-    if($request->has('roomsize') && $search2 != ('指定なし')) {
-        $rooms = $studios->map(function ($studio) {
-            return $studio->rooms->filter(function ($room) {
-            $room->roomsize >= $request->input('roomsize');
-            });
-        })->flatten();;
-    } else {
-        $rooms = $studios->map(function($studio) {
-            return $studio->rooms;
-        })->flatten();
-    }
-    return view('Studio.index', ['studios' => $studios, 'rooms' => $rooms]);
+    // $rooms = [];
+    // if($request->has('roomsize') && $search2 != ('指定なし')) {
+    //     foreach($studios as $studio) {
+    //         foreach($studio->rooms as $room) {
+    //             if ($room->roomsize >= $search2) {
+    //                 $rooms[] = $room;
+    //             }
+    //         }
+    //     }
+    //     // dd($rooms);
+    // } else {
+    //     foreach($studios as $studio) {
+    //         foreach($studio->rooms as $room) {
+    //             $rooms[] = $room;
+    //         }
+    //     }
+    // }
+    $roomsize = $request->input('roomsize');
+    $reviewcount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
+    $staravg = DB::table('comments')->selectRaw('studio_id, AVG(stars) as stars_avg')->groupBy('studio_id')->get();
+    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'reviewcount' => $reviewcount, 'staravg' => $staravg]);
   }
 
     public function add(Request $request)

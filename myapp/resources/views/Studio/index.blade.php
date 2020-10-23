@@ -11,18 +11,26 @@
       <div><img alt="" src="{{$studio->image_url}}"  class="img_size" ></div>
    <li class="s_li">
       <div class="container">
-        <div class="item"><a href="studio/comment">⭐️{{$studio->name}}</a></div>
+        <div class="item">
+        @foreach($reviewcount as $review)
+            @if($review->studio_id === $studio->id)
+              @foreach($staravg as $avg)
+                @if($avg->studio_id === $studio->id)
+                  <div class="item"><a href="studio/comment">⭐️{{$avg->stars_avg}}（{{$review->stars_count}} 件）</a></div>
+                @endif
+              @endforeach
+            @endif
+          @endforeach
         <div class="item"><p>{{$studio->name}}</p></div>
         <div class="item">予約受付　TEL：{{$studio->tel}}</div>
         <div class="item">サイト：<a href="{{$studio->url}}">{{$studio->url}}</a></div>
-              @if($studio->rooms != null)
-                  @foreach ($studio->rooms as $room)
-        <div class="item">スタジオ情報：
-                      <tr><td>{{$room->name. "：" . $room->tatami_mats . "：" . $room->roomsize}}</td></tr>
-
-                  @endforeach
-              @endif
-         </div>
+            @foreach($studio->rooms as $room)
+                @if($room->roomsize >= $roomsize)
+                    <div class="item">スタジオ情報：
+                    <tr><td>{{$room->name. "：" . $room->tatami_mats . "：" . $room->roomsize}}</td></tr><br>
+                @endif
+            @endforeach
+                    </div>
      </li>
   </ul>
   @endforeach

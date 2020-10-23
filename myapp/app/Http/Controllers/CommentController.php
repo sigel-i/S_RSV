@@ -25,9 +25,9 @@ class CommentController extends Controller
         $comments = Comments::with('studio', 'User')->get();
         $studios = Studio::with('comments', 'User')->get();
         $users = User::with('comments')->get();
-        $recount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
+        $reviewcount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
         $staravg = DB::table('comments')->selectRaw('studio_id, AVG(stars) as stars_avg')->groupBy('studio_id')->get();
-        return view('Studio.comment', ['comments' => $comments, 'studios' => $studios, 'users' => $users, 'recount' => $recount, 'staravg' => $staravg]);
+        return view('Studio.comment', ['comments' => $comments, 'studios' => $studios, 'users' => $users, 'reviewcount' => $reviewcount, 'staravg' => $staravg]);
     }
 
     public function create(Request $request)
