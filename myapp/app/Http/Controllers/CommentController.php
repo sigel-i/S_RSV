@@ -14,7 +14,7 @@ class CommentController extends Controller
 
         if(!auth()->check()) {
             echo ('レビューするにはログインしてください。');
-            return  redirect('studio/search ');;
+            return  redirect('login');;
             }
         $studios = Studio::with('comments')->get();
         $users = User::with('comments')->get();

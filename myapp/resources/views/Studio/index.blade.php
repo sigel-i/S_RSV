@@ -16,7 +16,7 @@
             @if($review->studio_id === $studio->id)
               @foreach($staravg as $avg)
                 @if($avg->studio_id === $studio->id)
-                  <div class="item"><a href="studio/comment">⭐️{{$avg->stars_avg}}（{{$review->stars_count}} 件）</a></div>
+                  <div class="item"><a href="studio/comment">⭐️{{number_format($avg->stars_avg ,1)}}（{{$review->stars_count}} 件）</a></div>
                 @endif
               @endforeach
             @endif

@@ -1,3 +1,29 @@
+$bg-black: #131313;
+$bg-footer: #444;
+
+%section-padding {
+  padding: 100px 20%;
+
+  @media (max-width: 1280px) {
+    padding: 80px 10%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 5%;
+  }
+}
+
+html,
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.search-area
+{
+    background-image: url("/images/666897_m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .summary {
   padding:24px 16px 48px;
@@ -27,6 +53,19 @@
 }
 
 .hit-the-search {
+  text-align: center;
+}
+
+.search-title {
+  color: #DDDDDD;
+  font-size: 2em;
+  font-family: Helvetica;
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 0 #c9c9c9,
+}
+
+.search-title {
   text-align: center;
 }
 
@@ -96,7 +135,7 @@ list-style: none;
 body {
   font-family: 'Lato', sans-serif;
   color: white;
-  background-color: #131313;
+  background-color: $bg-black;
 }
 h1 {
   font-size: 30px;
@@ -137,7 +176,7 @@ label {
   font-size: 20px;
   margin: 10px;
   padding: 0 10px;
-  background-color: #131313;
+  background-color: $bg-black;
   -webkit-transition: top .2s ease-in-out,
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
@@ -149,7 +188,7 @@ label2 {
   top: 10px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: #131313;
+  background-color: $bg-black;
   -webkit-transition: top .2s ease-in-out,
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
@@ -161,7 +200,7 @@ label3 {
   top: 0px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: #131313;
+  background-color: $bg-black;
   -webkit-transition: top .2s ease-in-out,
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
@@ -178,7 +217,7 @@ input[type=text] {
   padding: 7px;
   border: 1px solid white;
   font-size: 18px;
-  background-color: #131313;
+  background-color: $bg-black;
   color: white;
 }
 
@@ -187,7 +226,7 @@ input[type=password] {
   padding: 10px;
   border: 1px solid white;
   font-size: 20px;
-  background-color: #131313;
+  background-color: $bg-black;
   color: white;
 }
 
@@ -196,7 +235,7 @@ input[type=password] {
   padding: 10px;
   border: 1px solid white;
   font-size: 16px;
-  background-color: #131313;
+  background-color: $bg-black;
   color: white;
 }
 
@@ -206,7 +245,7 @@ input[type=password] {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #131313;
+  color: $bg-black;
   border: solid 2px #4169E1;
   background-color: #4169E1;
   border-radius: 3px;
@@ -216,7 +255,7 @@ input[type=password] {
 .btn-flat-border:hover {
   background-color: #B0C4DE;
   border-color: #B0C4DE;
-  color: #131313;
+  color: $bg-black;
 }
 
 .click-down {
@@ -277,7 +316,7 @@ input[type="checkbox"]:checked + label:before {
   width: 400px;
   position: absolute;
   display: block;
-  top: 70%; left: 40%; right: 40%;
+  top: 70%; left: 50%; right: 50%;
   transform: translate(-50%, -50%);
 }
 

@@ -3,10 +3,11 @@
 
 
 @section('content')
+<div class="search-area">
 <form action="/studio" method="get">
   @csrf
   <div class="wrap">
-    <h2>音楽スタジオを検索して、<br>利用できるスタジオを確認しよう！</h2>
+  <div class="search-title">音楽スタジオを検索して、<br>利用できるスタジオを確認しよう！</div>
       <div class="center">
         <label2 for="city">エリアを選択する</label>
         <select name="city" id="city" class="custom-select sources">
@@ -28,4 +29,5 @@
       </div>
   </div>
   </form>
+</div>
 @endsection
