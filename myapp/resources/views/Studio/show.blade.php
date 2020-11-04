@@ -6,10 +6,9 @@
 <div class="summary">
   <div class="hit-the-search"><span class="text">音楽スタジオの</span><span class="text">評価とレビュー </span></div>
   <div class="top"></div>
-  @foreach ($studios as $studio)
     <ul class="r_ul">
           <div class="review_s"><img alt="" src="{{$studio->image_url}}"  class="img_size" >
-          <h2><p>{{$studio->name}}</p></h2><a href="review"><p>レビューを投稿する</p></a></div>
+          <h2><p>{{$studio->name}}</p></h2><a href="http://localhost/studio/review"><p>レビューを投稿する</p></a></div>
         <li class="r_li">
           <div class="container">
                         <div class="item">⭐️{{number_format($studio->averageStars(),1)}}（{{$studio->countStars()}} 件）</a></div>
@@ -19,7 +18,7 @@
                             <th>投稿者</th>
                             <th>コメント</th>
                         </tr>
-                  @foreach($comments as $comment)
+                    @foreach ($studio->comments as $comment)
                       @if($comment->studio_id === $studio->id)
                         <tr>
                           <td>{{optional($comment->created_at)->format('Y年m月d日')}}</td>
@@ -32,7 +31,5 @@
             </div>
           </li>
       </ul>
-  @endforeach
 </div>
 @endsection
-

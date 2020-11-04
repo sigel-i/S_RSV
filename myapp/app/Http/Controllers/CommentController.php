@@ -18,17 +18,25 @@ class CommentController extends Controller
             }
         $studios = Studio::with('comments')->get();
         $users = User::with('comments')->get();
-        return view('Studio.review', ['studios' => $studios,  'users' => $users]);
+        $sort = $request->sort;
+        $items = Studio::orderBy($sort, 'asc')->simplePaginate(5);
+        return view('Studio.review', ['studios' => $studios,  'users' => $users, 'items' => $items]);
     }
 
     public function comment(Request $request) {
         $comments = Comments::with('studio', 'User')->get();
         $studios = Studio::with('comments', 'User')->get();
         $users = User::with('comments')->get();
-        $reviewcount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
-        $staravg = DB::table('comments')->selectRaw('studio_id, AVG(stars) as stars_avg')->groupBy('studio_id')->get();
-        return view('Studio.comment', ['comments' => $comments, 'studios' => $studios, 'users' => $users, 'reviewcount' => $reviewcount, 'staravg' => $staravg]);
+        // $reviewcount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
+        // $staravg = DB::table('comments')->selectRaw('studio_id, AVG(stars) as stars_avg')->groupBy('studio_id')->get();
+        return view('Studio.comment', ['comments' => $comments, 'studios' => $studios, 'users' => $users]);
     }
+
+    // public function sort(Request $request) {
+    //     $sort = $request->sort;
+    //     $items = Comments::orderBy($sort, 'asc')->simplePaginate(5);
+    //     return view('studio.index', ['items' => $items, 'sort' => $sort]);
+    // }
 
     public function create(Request $request)
     {

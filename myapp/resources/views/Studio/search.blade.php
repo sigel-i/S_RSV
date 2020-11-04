@@ -7,7 +7,7 @@
 <form action="/studio" method="get">
   @csrf
   <div class="wrap">
-  <div class="search-title">音楽スタジオを検索して、<br>利用できるスタジオを確認しよう！</div>
+  <div class="search-title">音楽スタジオを検索して、<br>利用できる部屋を確認しよう！</div>
       <div class="center">
         <label2 for="city">エリアを選択する</label>
         <select name="city" id="city" class="custom-select sources">

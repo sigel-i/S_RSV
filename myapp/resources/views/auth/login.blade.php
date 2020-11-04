@@ -6,6 +6,9 @@
 <form method="POST" action="{{ route('login') }}">
   @csrf
   <div class="wrap">
+  @if(!auth()->check())
+  レビューするにはログインしてください。
+@endif
   <h1>ログイン</h1>
   @include('error_card_list')
   <div>

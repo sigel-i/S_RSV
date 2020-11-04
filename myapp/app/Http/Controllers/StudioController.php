@@ -12,6 +12,7 @@ class StudioController extends Controller
 {
     public function index(Request $request)
     {
+    $sort = $request->sort;
         // dd($request);
     $search1 = $request->input('city');
     $search2 = $request->input('roomsize');
@@ -41,9 +42,7 @@ class StudioController extends Controller
     //     }
     // }
     $roomsize = $request->input('roomsize');
-    $reviewcount = DB::table('comments')->selectRaw('studio_id, count(stars) as stars_count')->groupBy('studio_id')->get();
-    $staravg = DB::table('comments')->selectRaw('studio_id, AVG(stars) as stars_avg')->groupBy('studio_id')->get();
-    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'reviewcount' => $reviewcount, 'staravg' => $staravg]);
+    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize]);
   }
 
     public function add(Request $request)
@@ -82,5 +81,9 @@ class StudioController extends Controller
         return view('studio.search');
     }
 
+    public function show($id) {
+        $studio = Studio::findOrFail($id);
+        return view('studio.show', ['studio' => $studio]);
+    }
 
 }

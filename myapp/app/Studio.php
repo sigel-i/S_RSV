@@ -5,6 +5,7 @@ namespace App;
 use App\Room;
 use App\Comments;
 use Illuminate\Database\Eloquent\Model;
+use Kyslik\ColumnSortable\Sortable;
 
 class Studio extends Model
 {
@@ -39,6 +40,31 @@ class Studio extends Model
   {
     return $this->belongsTo('App\User');
   }
+
+  public function countStars() {
+    $comments = $this->comments;
+    $countStars = 0;
+    foreach($comments as $comment) {
+      $countStars = $comments->count();
+    }
+    return $countStars;
+  }
+
+  public function averageStars() {
+    $comments = $this->comments;
+    $countStars = 0;
+      foreach($comments as $comment) {
+      if($comments->sum('stars')> 0) {
+        return $countStars = $comments->sum('stars') / $comments->count();
+      } else {
+        return  $countStars;
+      }
+    }
+  }
+
+  // use Sortable;
+  // public $sortable = ['averageStars()'];
+
   // public function scopeNameEqual($query, $str)
   // {
   //   return $query->where('city', $str);

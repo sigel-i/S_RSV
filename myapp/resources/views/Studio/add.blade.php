@@ -15,7 +15,7 @@
         </div>
     </div>
     @endif
-    <div class="wrap">
+    <div class="wrap_add">
         <h1>新規登録</h1>
         <div>
             <label for="name">スタジオ名</label>
@@ -45,7 +45,7 @@
             <label for="image_url">トップページ画像URL</label>
             <input type="text" id="image_url" name="image_url" required value="{{ old('image_url') }}">
         </div>
-        <div class="center">
+        <div class="center_add">
         <button class="btn-flat-border" type="submit">新規登録</button>
         </div>
     </div>
