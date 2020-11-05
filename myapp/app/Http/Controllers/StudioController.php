@@ -22,27 +22,12 @@ class StudioController extends Controller
     } else {
         $studios = Studio::all();
     }
-    // dd($studios);
-    // 部屋の利用人数で検索する場合、mapとfilterを使って検索する。検索しない場合はmapだけ
-    // $rooms = [];
-    // if($request->has('roomsize') && $search2 != ('指定なし')) {
-    //     foreach($studios as $studio) {
-    //         foreach($studio->rooms as $room) {
-    //             if ($room->roomsize >= $search2) {
-    //                 $rooms[] = $room;
-    //             }
-    //         }
-    //     }
-    //     // dd($rooms);
-    // } else {
-    //     foreach($studios as $studio) {
-    //         foreach($studio->rooms as $room) {
-    //             $rooms[] = $room;
-    //         }
-    //     }
-    // }
     $roomsize = $request->input('roomsize');
-    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize]);
+    $sortedStudios = $studios->sortByDesc(function($studio) {
+        return $studio->averageStars();
+      });
+    $sortedStudios->values()->all();
+    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sortedStudios' => $sortedStudios]);
   }
 
     public function add(Request $request)

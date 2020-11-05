@@ -19,8 +19,11 @@ class CommentController extends Controller
         $studios = Studio::with('comments')->get();
         $users = User::with('comments')->get();
         $sort = $request->sort;
-        $items = Studio::orderBy($sort, 'asc')->simplePaginate(5);
-        return view('Studio.review', ['studios' => $studios,  'users' => $users, 'items' => $items]);
+        if (is_null($sort)) {
+            $sort = 'id';
+            }
+        $items = Studio::orderBy($sort, 'desc')->simplePaginate(5);
+        return view('Studio.review', ['studios' => $studios,  'users' => $users, 'items' => $items, 'sort' => $sort]);
     }
 
     public function comment(Request $request) {
