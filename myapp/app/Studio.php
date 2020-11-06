@@ -62,8 +62,6 @@ class Studio extends Model
     }
   }
 
-  // use Sortable;
-  // public $sortable = ['averageStars()'];
 
   // public function scopeNameEqual($query, $str)
   // {

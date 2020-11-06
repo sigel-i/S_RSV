@@ -4,7 +4,7 @@
 @section('content')
   <form method="POST" action="{{ route('register') }}">
     @csrf
-    <div class="wrap">
+    <div class="wrap_add">
       <h1>ユーザー登録</h1>
       @include('error_card_list')
         <div>
@@ -27,7 +27,9 @@
           <label for="password_confirmation">パスワード(確認)</label>
           <input type="password" id="password_confirmation" name="password_confirmation" required>
         </div>
+        <div class="center_add">
         <button class="btn-flat-border"  type="submit">ユーザー登録</button>
+        </div>
       </div>
   </form>
 @endsection

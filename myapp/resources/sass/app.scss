@@ -44,7 +44,6 @@ body {
 }
 h1 {
   @media (max-width: 768px) {
-    text-align: center;
     font-size:28px;
   }
   font-size: 30px;
@@ -72,6 +71,10 @@ div.wrap {
     transform: translate(-50%, -70%);
   }
   width: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   vertical-align: middle;
 }
 
@@ -82,13 +85,13 @@ div.wrap div {
 
 div.wrap_add {
   @media (max-width: 768px) {
-    padding: 100px 80px 20%;
+    padding: 100px 90px 60%;
   }
   width: 520px;
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -50%);
   vertical-align: middle;
 }
 
@@ -147,9 +150,9 @@ label3 {
 
 .center_add {
   @media (max-width: 768px) {
-    padding: 0px 5%;
+    padding: 0px 20%;
   }
-  width: 470px;
+  width: 420px;
   position: absolute;
   display: block;
   top: 70%; left: 40%; right: 50%;

@@ -7,6 +7,8 @@ use App\Reserve;
 use App\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 
 class StudioController extends Controller
 {
@@ -17,17 +19,18 @@ class StudioController extends Controller
     $search1 = $request->input('city');
     $search2 = $request->input('roomsize');
     // エリア検索する場合、whereを使って検索する。検索しない場合はall()
-    if($request->has('city') && $search1 != ('指定なし'))  {
+    if ($request->has('city') && $search1 != ('指定なし') && $sort->$studio) {
+        $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%')->paginate(5);
+        $studios = $searchedStudios->sortByDesc(function($studio) {
+          return $studio->averageStars();
+        });
+      } elseif ($request->has('city') && $search1 != ('指定なし')) {
         $studios = Studio::where('city', 'like', '%'.$search1.'%')->get();
-    } else {
+      } else {
         $studios = Studio::all();
-    }
+      }
     $roomsize = $request->input('roomsize');
-    $sortedStudios = $studios->sortByDesc(function($studio) {
-        return $studio->averageStars();
-      });
-    $sortedStudios->values()->all();
-    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sortedStudios' => $sortedStudios]);
+    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sort' => $sort]);
   }
 
     public function add(Request $request)

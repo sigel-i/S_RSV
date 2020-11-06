@@ -13,8 +13,7 @@ class CommentController extends Controller
     public function index(Request $request) {
 
         if(!auth()->check()) {
-            echo ('レビューするにはログインしてください。');
-            return  redirect('login');;
+            return  redirect('login')->with('flash_message', 'レビューするにはログインしてください。');
             }
         $studios = Studio::with('comments')->get();
         $users = User::with('comments')->get();
