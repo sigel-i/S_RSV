@@ -51,3 +51,6 @@ Route::post('/studio/review', 'CommentController@create');
 
 Route::get('studios/{id}', 'StudioController@show')->where('id', '[0-9]+');
 
+Route::get('/', 'CSVimportsController@index')->name('csvimport_index');
+
+Route::post('/import', 'CSVimportsController@import')->name('csvimport_import');
