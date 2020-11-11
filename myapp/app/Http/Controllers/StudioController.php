@@ -20,14 +20,12 @@ class StudioController extends Controller
     $search2 = $request->input('roomsize');
     // エリア検索する場合、whereを使って検索する。検索しない場合はall()
     if ($request->has('city') && $search1 != ('指定なし') && $sort->$studio) {
-        $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%')->paginate(5);
+        $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%');
         $studios = $searchedStudios->sortByDesc(function($studio) {
-          return $studio->averageStars();
-        });
-      } elseif ($request->has('city') && $search1 != ('指定なし')) {
-        $studios = Studio::where('city', 'like', '%'.$search1.'%')->get();
+            return $studio->averageStars();
+        })->paginate(5);
       } else {
-        $studios = Studio::all();
+        $studios = Studio::paginate(5);
       }
     $roomsize = $request->input('roomsize');
     return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sort' => $sort]);
@@ -66,7 +64,7 @@ class StudioController extends Controller
 
     public function search()
     {
-        return view('studio.search');
+        return view('Studio.search');
     }
 
     public function show($id) {
