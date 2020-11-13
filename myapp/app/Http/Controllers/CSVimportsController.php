@@ -108,7 +108,7 @@ class CSVimportsController extends Controller
         if ($array_count < 500){
 
             //配列をまるっとインポート(バルクインサート)
-            CSVimport::insert($array);
+            csvimport::insert($array);
 
 
         } else {
@@ -122,7 +122,7 @@ class CSVimportsController extends Controller
             //分割した数の分だけインポートを繰り替えす
             for ($i = 0; $i <= $array_partial_count - 1; $i++){
 
-                CSVimport::insert($array_partial[$i]);
+                csvimport::insert($array_partial[$i]);
 
             }
 
