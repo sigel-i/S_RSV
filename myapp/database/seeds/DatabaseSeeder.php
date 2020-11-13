@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(csvimportsTableSeeder::class);
+        $this->call(StudioTableSeeder::class);
     }
 }
