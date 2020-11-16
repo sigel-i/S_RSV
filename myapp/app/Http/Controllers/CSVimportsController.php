@@ -5,15 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\CSVimport;
+use App\Room;
 use SplFileObject;
 
 class CSVimportsController extends Controller
 {
-    protected $csvimport = null;
+    protected $Room = null;
 
-    public function __construct(CSVimport $csvimport)
+    public function __construct(Room $Room)
    {
-       $this->csvimport = $csvimport;
+       $this->Room = $Room;
    }
 
 
@@ -32,7 +33,7 @@ class CSVimportsController extends Controller
     {
 
     //全件削除
-    // CSVimport::truncate();
+    Room::truncate();
 
     // ロケールを設定(日本語に設定)
     setlocale(LC_ALL, 'ja_JP.UTF-8');
@@ -87,6 +88,7 @@ class CSVimportsController extends Controller
             array_push($array, $csvimport_array);
 
 
+
                 // 数が多いと処理重すぎなのでバルクインサートに切り替える
                 // CSVimport::insert(array(
                 //     'name' => $name,
@@ -108,7 +110,7 @@ class CSVimportsController extends Controller
         if ($array_count < 500){
 
             //配列をまるっとインポート(バルクインサート)
-            csvimport::insert($array);
+            Room::insert($array);
 
 
         } else {
@@ -122,9 +124,11 @@ class CSVimportsController extends Controller
             //分割した数の分だけインポートを繰り替えす
             for ($i = 0; $i <= $array_partial_count - 1; $i++){
 
-                csvimport::insert($array_partial[$i]);
+                Room::insert($array_partial[$i]);
 
             }
+
+            return view('welcome');
 
         }
     }
