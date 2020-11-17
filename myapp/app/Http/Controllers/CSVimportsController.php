@@ -33,7 +33,7 @@ class CSVimportsController extends Controller
     {
 
     //全件削除
-    Room::truncate();
+    // Room::truncate();
 
     // ロケールを設定(日本語に設定)
     setlocale(LC_ALL, 'ja_JP.UTF-8');
@@ -66,21 +66,15 @@ class CSVimportsController extends Controller
         {
             // CSVの文字コードがSJISなのでUTF-8に変更
             $name = mb_convert_encoding($row[0], 'UTF-8', 'SJIS');
-            $email = mb_convert_encoding($row[1], 'UTF-8', 'SJIS');
-            $pref = mb_convert_encoding($row[2], 'UTF-8', 'SJIS');
-            $city = mb_convert_encoding($row[3], 'UTF-8', 'SJIS');
-            $tel = mb_convert_encoding($row[4], 'UTF-8', 'SJIS');
-            $url = mb_convert_encoding($row[5], 'UTF-8', 'SJIS');
-            $image_url = mb_convert_encoding($row[6], 'UTF-8', 'SJIS');
+            $studio_id = mb_convert_encoding($row[1], 'UTF-8', 'SJIS');
+            $tatami_mats = mb_convert_encoding($row[2], 'UTF-8', 'SJIS');
+            $roomsize = mb_convert_encoding($row[3], 'UTF-8', 'SJIS');
 
             $csvimport_array = [
                 'name' => $name,
-                'email' => $email,
-                'pref' => $pref,
-                'city' => $city,
-                'tel' => $tel,
-                'url' => $url,
-                'image_url' => $image_url
+                'studio_id' => $studio_id,
+                'tatami_mats' => $tatami_mats,
+                'roomsize' => $roomsize,
 
             ];
 
@@ -91,13 +85,10 @@ class CSVimportsController extends Controller
 
                 // 数が多いと処理重すぎなのでバルクインサートに切り替える
                 // CSVimport::insert(array(
-                //     'name' => $name,
-                //     'email' => $email,
-                //     'pref' => $pref,
-                //     'city' => $city,
-                //     'tel' => $tel,
-                //     'url' => $url,
-                //     'image_url' => $image_url
+                    // 'name' => $name,
+                    // 'studio_id' => $studio_id,
+                    // 'tatami_mats' => $tatami_mats,
+                    // 'roomsize' => $roomsize,
                 // ));
         }
         $row_count++;

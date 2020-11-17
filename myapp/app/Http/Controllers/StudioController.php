@@ -44,7 +44,7 @@ class StudioController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $studio->fill($form)->save();
-        return redirect('studio/search');
+        return redirect('studio/add');
     }
 
     // public function post(Request $request)

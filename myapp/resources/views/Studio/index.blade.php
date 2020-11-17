@@ -10,14 +10,15 @@
   <a href="{{ $studios->appends(['sort' => $sort])->links() }}">評価の平均値で降順</a>
     @foreach ($studios as $studio)
         <ul class="s_ul">
-            <div><img alt="" src="{{$studio->image_url}}"  class="img_size" ></div>
+                <div class="container">
+                    <img alt="" src="{{$studio->image_url}}"  class="img_size" >
+                    <div class="item"><a href="studios/{{$studio->id}}">⭐️{{number_format($studio->averageStars() ,1)}}（{{$studio->countStars()}} 件）</a></div>
+                            <div class="item"><p>{{$studio->name}}</p></div>
+                            <div class="item">予約受付　TEL：{{$studio->tel}}</div>
+                            <div class="item">サイト：<a href="{{$studio->url}}" target="_blank" rel="noopener noreferrer">{{$studio->url}}</a></div>
+                </div>
             <li class="s_li">
                 <div class="container">
-                  <div class="item">
-                            <div class="item"><a href="studios/{{$studio->id}}">⭐️{{number_format($studio->averageStars() ,1)}}（{{$studio->countStars()}} 件）</a></div>
-                  <div class="item"><p>{{$studio->name}}</p></div>
-                  <div class="item">予約受付　TEL：{{$studio->tel}}</div>
-                  <div class="item">サイト：<a href="{{$studio->url}}">{{$studio->url}}</a></div>
                   <table class="table_box">
                       <tr>
                           <th>部屋名</th>

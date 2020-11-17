@@ -17,7 +17,7 @@ class Studio extends Model
     'pref' => 'string',
     'city' => 'string',
     'url' =>  'active_url',
-    'tel' => 'required|min:11|numeric',
+    'tel' => 'required', 'regex:/^[0-9\-]+$/i', 'max:14',
     'image_url' => 'required|active_url',
   );
 

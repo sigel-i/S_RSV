@@ -23,7 +23,7 @@ Route::get('/user',  'UserController@index')
 Route::get('/studio',  'StudioController@index');
 
 Route::get('studio/add', 'StudioController@add');
-Route::post('/studio/add', 'StudioController@create');
+Route::post('studio/add', 'StudioController@create');
 
 Auth::routes();
 
@@ -51,6 +51,6 @@ Route::post('/studio/review', 'CommentController@create');
 
 Route::get('studios/{id}', 'StudioController@show')->where('id', '[0-9]+');
 
-Route::get('/', 'CSVimportsController@index')->name('csvimport_index');
+Route::get('/', 'csvimportsController@index')->name('csvimport_index');
 
-Route::post('/import', 'CSVimportsController@import')->name('csvimport_import');
+Route::post('/import', 'csvimportsController@import')->name('csvimport_import');
