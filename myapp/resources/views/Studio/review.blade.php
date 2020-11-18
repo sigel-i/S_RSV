@@ -5,7 +5,7 @@
 @section('content')
 <form method="post" action="/studio/review">
   @csrf
-  <div class="wrap">
+  <div class="wrap_add">
       <h1>レビュー投稿</h1>
       @include('error_card_list')
       <div class="center">
