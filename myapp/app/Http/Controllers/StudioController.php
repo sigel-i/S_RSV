@@ -15,7 +15,7 @@ class StudioController extends Controller
     public function index(Request $request)
     {
     $sort = $request->sort;
-        // dd($request);
+        // dd($sort);
     $search1 = $request->input('city');
     $search2 = $request->input('roomsize');
     // エリア検索する場合、whereを使って検索する。検索しない場合はall()
@@ -69,7 +69,7 @@ class StudioController extends Controller
 
     public function show($id) {
         $studio = Studio::findOrFail($id);
-        return view('studio.show', ['studio' => $studio]);
+        return view('Studio.show', ['studio' => $studio]);
     }
 
 }
