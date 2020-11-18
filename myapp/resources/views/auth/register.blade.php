@@ -8,6 +8,7 @@
       <h1>ユーザー登録</h1>
       @include('error_card_list')
         <div>
+          <input type="hidden" id="staff" name="staff" value="0">
           <input type="checkbox" id="staff" name="staff" value="1">
           <label for="staff">あなたは、スタジオのスタッフですか？</label>
         </div>
