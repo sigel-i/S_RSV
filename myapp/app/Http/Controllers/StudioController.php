@@ -15,7 +15,7 @@ class StudioController extends Controller
     public function index(Request $request)
     {
     $sort = $request->sort;
-        // dd($sort);
+        dd($sort);
     $search1 = $request->input('city');
     $search2 = $request->input('roomsize');
     // エリア検索する場合、whereを使って検索する。検索しない場合はall()

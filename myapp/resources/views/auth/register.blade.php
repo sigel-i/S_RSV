@@ -8,9 +8,11 @@
       <h1>ユーザー登録</h1>
       @include('error_card_list')
         <div>
-          <input type="hidden" id="staff" name="staff" value="0">
-          <input type="checkbox" id="staff" name="staff" value="1">
-          <label for="staff">あなたは、スタジオのスタッフですか？</label>
+          <h2>あなたは、スタジオのスタッフですか？</h2>
+          <input type="radio" id="staff-1" name="staff" value="1">
+          <label for="staff-1">YES</label>
+          <input type="radio" id="staff-2" name="staff" value="0">
+          <label for="staff-2">NO</label>
         </div>
         <div>
           <label for="name">ユーザー名</label>

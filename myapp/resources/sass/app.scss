@@ -490,10 +490,10 @@ input[type=password] {
   transform: translateY(2px);
 }
 
-/*Checkboxes styles*/
-input[type="checkbox"] { display: none; }
+/*radio styles*/
+input[type="radio"] { display: none; }
 
-input[type="checkbox"] + label {
+input[type="radio"] + label {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -506,9 +506,9 @@ input[type="checkbox"] + label {
   -ms-user-select: none;
 }
 
-input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+input[type="radio"] + label:last-child { margin-bottom: 0; }
 
-input[type="checkbox"] + label:before {
+input[type="radio"] + label:before {
   content: '';
   display: block;
   width: 20px;
@@ -522,7 +522,7 @@ input[type="checkbox"] + label:before {
   transition: all .12s, border-color .08s;
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type="radio"]:checked + label:before {
   width: 10px;
   top: -5px;
   left: 5px;
@@ -533,7 +533,6 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 
 
 /** Custom Select **/
