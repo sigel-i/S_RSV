@@ -14,7 +14,7 @@ class RoomTableSeeder extends Seeder
     {
         $param = [
             'name' => '1st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '22帖',
             'roomsize' => '5人以上',
         ];
@@ -22,7 +22,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '2st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '11帖',
             'roomsize' => '4人',
         ];
@@ -30,7 +30,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '3st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '11帖',
             'roomsize' => '4人',
         ];
@@ -38,7 +38,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '4st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '13帖',
             'roomsize' => '4人',
         ];
@@ -46,7 +46,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '5st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '11帖',
             'roomsize' => '4人',
         ];
@@ -54,7 +54,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '6st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '11帖',
             'roomsize' => '4人',
         ];
@@ -62,7 +62,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => '7st',
-            'studio_id' => '1',
+            'studio_id' => '2',
             'tatami_mats' => '13帖',
             'roomsize' => '4人',
         ];
@@ -70,7 +70,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'A3st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '7.5帖',
             'roomsize' => '3人',
         ];
@@ -78,7 +78,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'A5st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '10帖',
             'roomsize' => '4人',
         ];
@@ -86,7 +86,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'B5st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '11帖',
             'roomsize' => '4人',
         ];
@@ -94,7 +94,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'E2st+Sub',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '17帖+2.5帖',
             'roomsize' => '5人以上',
         ];
@@ -102,7 +102,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'R/P STUDIO',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '6帖',
             'roomsize' => '2人',
         ];
@@ -110,7 +110,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'A1st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '9帖',
             'roomsize' => '3人',
         ];
@@ -118,7 +118,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'A2st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '10帖',
             'roomsize' => '3人',
         ];
@@ -126,7 +126,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'B1st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '12帖',
             'roomsize' => '4人',
         ];
@@ -134,7 +134,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'B2st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '12帖',
             'roomsize' => '4人',
         ];
@@ -142,7 +142,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'B3st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '14帖',
             'roomsize' => '5人',
         ];
@@ -150,7 +150,7 @@ class RoomTableSeeder extends Seeder
 
         $param = [
             'name' => 'E1st',
-            'studio_id' => '2',
+            'studio_id' => '1',
             'tatami_mats' => '16帖',
             'roomsize' => '5人以上',
         ];
