@@ -7,7 +7,7 @@
   <div class="hit-the-search">
     <span class="text">検索で一致した、</span><span class="text">音楽スタジオ情報 </p></span></div>
   <div class="top"></div>
-  <a href="{{ $studios->appends(['sort' => $sort])->links() }}">評価の平均値で降順</a>
+  <a href="{{ request()->fullUrl() . '&sort=desc' }}">評価の平均値で降順</a>
     @foreach ($studios as $studio)
         <ul class="s_ul">
                 <div class="container">

@@ -393,7 +393,7 @@ class RoomTableSeeder extends Seeder
             'name' => 'GSst+Rec.B',
             'studio_id' => '4',
             'tatami_mats' => '10+5帖',
-            'roomsize' => '3人ß∂',
+            'roomsize' => '3人',
         ];
         DB::table('rooms')->insert($param);
 

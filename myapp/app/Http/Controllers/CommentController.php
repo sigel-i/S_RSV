@@ -53,6 +53,10 @@ class CommentController extends Controller
         $comment->studio_id = $request->studio_id;
         $comment->user_id = $request->user_id;
         $comment->save();
+        $commentStudios = Comments::where('studio_id', $comment->studio_id)->get();
+        foreach ($commentStudios as $commentStudio)
+        if($comments->sum('stars')> 0) {
+            return $countStars = $comments->sum('stars') / $comments->count();
         return redirect('/studio/comment');
     }
 }

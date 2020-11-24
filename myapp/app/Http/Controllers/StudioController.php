@@ -18,14 +18,44 @@ class StudioController extends Controller
         // dd($sort);
     $search1 = $request->input('city');
     $search2 = $request->input('roomsize');
+    // if (is_null($sort)) {
+    //     if ($request->has('city') && $search1 != '指定なし') {
+    //     // cityがある、並び替えはしない
+    //     //http://localhost/studio?city=千代田区
+    //     $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%')->paginate(2);
+
+    //     } elseif ($request->has('city') && $search1 == '指定なし') {
+    //     // cityがない、並び替えはしない
+    //     //http://localhost/studio?city=指定なし
+    //     $studios = Studio::paginate(2);
+    //     }
+    // } else {
+    //     if ($request->has('city') && $search1 != '指定なし') {
+    //     // cityがある、並び替えをする
+    //     // http://localhost/studio?city=千代田区&sort=desc
+    //     $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%')->orderBy(function($studio) {
+    //         return $studio->averageStars();
+    //     })->paginate(2);
+    //     // dd($studios);
+
+
+    //     } elseif ($request->has('city') && $search1 == '指定なし') {
+    //     // cityがない、並び替えをする
+    //     // http://localhost/studio?city=指定なし&sort=desc
+    //     $studios =  paginate(2);
+
+
+    //     }
+    // }
+
     // エリア検索する場合、whereを使って検索する。検索しない場合はall()
     if ($request->has('city') && $search1 != ('指定なし') && $sort->$studio) {
         $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%');
         $studios = $searchedStudios->sortByDesc(function($studio) {
             return $studio->averageStars();
-        })->paginate(5);
+        })->paginate(4);
       } else {
-        $studios = Studio::paginate(5);
+        $studios = Studio::paginate(4);
       }
     $roomsize = $request->input('roomsize');
     return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sort' => $sort]);
