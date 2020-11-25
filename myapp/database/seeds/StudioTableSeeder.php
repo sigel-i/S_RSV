@@ -12,7 +12,7 @@ class StudioTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            // 'id'=>1,
+            'id'=>1,
             'name' => 'リンキィディンクスタジオお茶の水・神保町',
             'email' => 'test@studio.jp',
             'pref' => '東京都',
@@ -24,7 +24,7 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
-            // 'id'=>2,
+            'id'=>2,
             'name' => 'サウンドスタジオノア 渋谷1号店',
             'email' => 'test2@studio.jp',
             'pref' => '東京都',
@@ -36,7 +36,7 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
-            // 'id'=>3,
+            'id'=>3,
             'name' => 'サウンドスタジオペンタ 渋谷ムーンサイド',
             'email' => 'test3@studio.jp',
             'pref' => '東京都',
@@ -48,7 +48,7 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
-            // 'id'=>4,
+            'id'=>4,
             'name' => 'サウンドスタジオノア 秋葉原店',
             'email' => 'test4@studio.jp',
             'pref' => '東京都',
@@ -60,7 +60,7 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
-            // 'id'=>5,
+            'id'=>5,
             'name' => 'スタジオノード秋葉原',
             'email' => 'akihabara@studio-node.com',
             'pref' => '東京都',
