@@ -27,7 +27,7 @@ class StudioController extends Controller
         } elseif ($request->has('city') && $search1 == '指定なし') {
         // cityがない、並び替えはしない
         //http://localhost/studio?city=指定なし
-        $studios = Studio::paginate(2);
+        $studios = Studio::paginate(5);
         }
     } else {
         if ($request->has('city') && $search1 != '指定なし') {
@@ -35,13 +35,13 @@ class StudioController extends Controller
         // http://localhost/studio?city=千代田区&sort=desc
         $searchedStudios = Studio::where('city', 'like', '%'.$search1.'%')->orderBy(function($studio) {
             return $studio->averageStars();
-        })->paginate(2);
+        })->paginate(5);
         // dd($studios);
 
         } elseif ($request->has('city') && $search1 == '指定なし') {
         // cityがない、並び替えをする
         // http://localhost/studio?city=指定なし&sort=desc
-        $studios =  paginate(2);
+        $studios =  paginate(5);
         }
     }
 

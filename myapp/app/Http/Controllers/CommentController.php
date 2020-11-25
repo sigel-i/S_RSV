@@ -58,5 +58,6 @@ class CommentController extends Controller
         if($comments->sum('stars')> 0) {
             return $countStars = $comments->sum('stars') / $comments->count();
         return redirect('/studio/comment');
+        }
     }
 }
