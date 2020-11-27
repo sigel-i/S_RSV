@@ -143,6 +143,19 @@ label3 {
               font-size .2s ease-in-out;
 }
 
+.center_id {
+  @media (max-width: 768px) {
+    padding: 0px 5%;
+  }
+  width: 500px;
+  position: absolute;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  top: 70%; left: 50%; right: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .center {
   @media (max-width: 768px) {
     padding: 0px 5%;
@@ -163,6 +176,11 @@ label3 {
   display: block;
   top: 70%; left: 40%; right: 50%;
   transform: translate(-50%, -50%);
+}
+
+textarea {
+  resize: none;
+  height:100px;
 }
 
 //検索

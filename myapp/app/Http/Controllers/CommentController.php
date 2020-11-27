@@ -10,19 +10,16 @@ use App\User;
 
 class CommentController extends Controller
 {
-    public function index(Request $request) {
+    public function index($id) {
 
+        // dd($request);
         if(!auth()->check()) {
             return  redirect('login')->with('flash_message', 'レビューするにはログインしてください。');
             }
         $studios = Studio::with('comments')->get();
         $users = User::with('comments')->get();
-        $sort = $request->sort;
-        if (is_null($sort)) {
-            $sort = 'id';
-            }
-        $items = Studio::orderBy($sort, 'desc')->simplePaginate(5);
-        return view('Studio.review', ['studios' => $studios,  'users' => $users, 'items' => $items, 'sort' => $sort]);
+        $studio = Studio::findOrFail($id);
+        return view('Studio.review', ['studios' => $studios,  'users' => $users, 'studio' => $studio]);
     }
 
     public function comment(Request $request) {
@@ -53,11 +50,11 @@ class CommentController extends Controller
         $comment->studio_id = $request->studio_id;
         $comment->user_id = $request->user_id;
         $comment->save();
-        $commentStudios = Comments::where('studio_id', $comment->studio_id)->get();
-        foreach ($commentStudios as $commentStudio)
-        if($comments->sum('stars')> 0) {
-            return $countStars = $comments->sum('stars') / $comments->count();
-        return redirect('/studio/comment');
-        }
+
+        $studio = Studio::find($comment->studio_id);
+        $studio->average_stars = $studio->averageStars();
+        $studio->save();
+        return redirect('/studios/' . $comment->studio_id);
     }
+
 }

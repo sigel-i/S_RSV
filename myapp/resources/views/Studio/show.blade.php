@@ -8,7 +8,7 @@
   <div class="top"></div>
     <ul class="r_ul">
           <div class="review_s"><img alt="" src="{{$studio->image_url}}"  class="img_size" >
-          <h2><p>{{$studio->name}}</p></h2><a href="/studio/review"><p>レビューを投稿する</p></a></div>
+          <h2><p>{{$studio->name}}</p></h2><a href="/studios/{{$studio->id}}/review"><p>レビューを投稿する</p></a></div>
         <li class="r_li">
           <div class="container">
                         <div class="item">⭐️{{number_format($studio->averageStars(),1)}}（{{$studio->countStars()}} 件）</a></div>

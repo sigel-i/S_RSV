@@ -46,7 +46,9 @@ Route::get('studio/search', 'StudioController@search');
 Route::get('studio/comment', 'CommentController@create');
 Route::get('studio/comment', 'CommentController@comment');
 
-Route::get('studio/review', 'CommentController@index');
+// Route::get('studio/review', 'CommentController@index');
+Route::get('studios/{id}/review', 'CommentController@index');
+
 Route::post('/studio/review', 'CommentController@create');
 
 Route::get('studios/{id}', 'StudioController@show')->where('id', '[0-9]+');

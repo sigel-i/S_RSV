@@ -22,6 +22,7 @@ class CreateStudiosTable extends Migration
             $table->string('tel');
             $table->string('url');
             $table->string('image_url');
+            $table->unsignedDecimal('average_stars',2,1)->default(0);
             $table->timestamps();
         });
     }
