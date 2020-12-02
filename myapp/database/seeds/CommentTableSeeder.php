@@ -91,5 +91,36 @@ class CommentTableSeeder extends Seeder
         ];
         DB::table('comments')->insert($param);
 
+        $param = [
+            'content' => '使いやすい',
+            'stars' => '5',
+            'studio_id' => '1',
+            'user_id' => '2',
+        ];
+        DB::table('comments')->insert($param);
+
+        $param = [
+            'content' => '設備が新しい',
+            'stars' => '5',
+            'studio_id' => '4',
+            'user_id' => '2',
+        ];
+        DB::table('comments')->insert($param);
+
+        $param = [
+            'content' => 'まあまあ',
+            'stars' => '2',
+            'studio_id' => '5',
+            'user_id' => '2',
+        ];
+        DB::table('comments')->insert($param);
+
+        $param = [
+            'content' => '店員の対応が良い',
+            'stars' => '4',
+            'studio_id' => '2',
+            'user_id' => '3',
+        ];
+        DB::table('comments')->insert($param);
     }
 }
