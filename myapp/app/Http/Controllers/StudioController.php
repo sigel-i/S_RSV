@@ -34,12 +34,12 @@ class StudioController extends Controller
         // cityがある、並び替えをする
         // http://localhost/studio?city=千代田区&sort=desc
         $studios = Studio::where('city', 'like', '%'.$search1.'%')->orderBy('average_stars', 'desc')->paginate(5);
-        // dd($studios);
 
         } elseif ($request->has('city') && $search1 == '指定なし') {
         // cityがない、並び替えをする
         // http://localhost/studio?city=指定なし&sort=desc
         $studios = Studio::orderBy('average_stars', 'desc')->paginate(5);
+                // dd($studios);
         }
     }
 

@@ -7,8 +7,8 @@
   <div class="hit-the-search">
     <span class="text">検索で一致した、</span><span class="text">音楽スタジオ情報 </p></span></div>
   <div class="top"></div>
-  <a href="{{ request()->fullUrl() . '&sort=desc' }}">評価の平均値で降順</a>
-    @foreach ($studios as $studio)
+  <a href="{{ request()->fullUrl() . '&sort=desc' }}">評価の平均値で降順</a><br>
+  @foreach ($studios as $studio)
         <ul class="s_ul">
                 <div class="container">
                     <img alt="" src="{{$studio->image_url}}"  class="img_size"><br><br>
