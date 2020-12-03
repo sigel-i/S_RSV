@@ -54,6 +54,9 @@ class CommentController extends Controller
         $studio = Studio::find($comment->studio_id);
         $studio->average_stars = $studio->averageStars();
         $studio->save();
+        $studio = Studio::find($comment->studio_id);
+        $studio->count_stars = $studio->countStars();
+        $studio->save();
         return redirect('/studios/' . $comment->studio_id);
     }
 
