@@ -9,7 +9,7 @@
       <h1>レビュー投稿</h1>
       @include('error_card_list')
       <div class="center_id">
-        <input type="hidden" for="user_id" name="user_id" id="user_id" value="{{ Auth::id() }}">ユーザーID：{{ Auth::id() }}
+        <input type="hidden" for="user_id" name="user_id" id="user_id" value="{{ Auth::id() }}">登録No.：{{ Auth::id() }}
       </div>
       <div class="center_id">
         <input type="hidden" for="studio_id" name="studio_id" id="studio_id" value="{{ $studio->id }}">スタジオ名：{{ $studio->name }}
