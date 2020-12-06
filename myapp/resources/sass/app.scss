@@ -225,16 +225,16 @@ textarea {
     font-size:24px;
   }
   position: absolute;
-  color: #fff;
+  color: #ffea00;
+  font-size: 64px;
+  font-family:'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;;
   font-weight: bold;
-  font-size: 32px;
-  font-family: Helvetica;
   text-shadow:
     0 1px 0 #444,
-    0 2px 0 #c9c9c9,
+    0 2px 0 #212121,
     0 3px 0 #bbb,
     0 4px 0 #4d4c4c,
-    // 0 5px 0 rgb(49, 49, 49),
+    0 5px 0 rgb(49, 49, 49),
     // 0 6px 1px rgba(0,0,0,.1),
     // 0 0 5px rgba(0,0,0,.1),
     // 0 1px 3px rgba(0,0,0,.3),

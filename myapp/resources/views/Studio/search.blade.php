@@ -8,7 +8,7 @@
   @csrf
   <div class="wrap">
       <div class="overlay">
-       <div class="search-title">音楽スタジオを検索して、<br>利用できる部屋を確認しよう！</div>
+       <div class="search-title">Studio Search</div>
           <div class="center">
             <label2 for="city">エリアを選択する</label>
             <select name="city" id="city" class="custom-select sources">
