@@ -17,11 +17,27 @@
 <div class="summary">
   <div class="hit-the-search">
     <span class="text">検索で一致した、</span><span class="text">音楽スタジオ情報 </p></span></div>
+      <div id="ham">
+      <menu>
+        <div class="inner">
+          <ul>
+            <li><a href="/studio?city={{ $city }}&sort=desc&column=average_stars">評価の平均値で降順</a></li>
+            <li><a href="/studio?city={{ $city }}&sort=asc&column=average_stars">評価の平均値で昇順</a></li>
+            <li><a href="/studio?city={{ $city }}&sort=desc&column=count_stars">コメントの数で降順</a></li>
+            <li><a href="/studio?city={{ $city }}&sort=asc&column=count_stars">コメントの数で昇順</a></li>
+          </ul>
+        </div>
+      </menu>
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+  <div id="mask"></div>
+
+  </div>
   <div class="top"></div>
-  <a href="/studio?city={{ $city }}&sort=desc&column=average_stars">評価の平均値で降順</a><br>
-  <a href="/studio?city={{ $city }}&sort=asc&column=average_stars">評価の平均値で昇順</a><br>
-  <a href="/studio?city={{ $city }}&sort=desc&column=count_stars">コメントの数で降順</a><br>
-  <a href="/studio?city={{ $city }}&sort=asc&column=count_stars">コメントの数で昇順</a><br>
   @foreach ($studios as $studio)
         <ul class="s_ul">
                 <div class="container">
