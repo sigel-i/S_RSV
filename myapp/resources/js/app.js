@@ -31,6 +31,12 @@ const app = new Vue({
     el: '#app',
 });
 
+$('[name="link"]').change(function () {
+    var val = $('[name=link]').val();
+    location.href = val;
+});
+
+
 $('input').on('focusin', function () {
     $(this).parent().find('label').addClass('active');
 });
@@ -40,26 +46,4 @@ $('input').on('focusout', function () {
         $(this).parent().find('label').removeClass('active');
     }
 });
-
-(function ($) {
-    var $body = $('body');
-    var $btn = $('.toggle_btn');
-    var $mask = $('#mask');
-    var open = 'open'; // class
-    // menu open close
-    $btn.on('click', function () {
-        if (!$body.hasClass(open)) {
-            $body.addClass(open);
-        } else {
-            $body.removeClass(open);
-        }
-    });
-    // mask close
-    $mask.on('click', function () {
-        $body.removeClass(open);
-    });
-})(jQuery);
-
-
-
 
