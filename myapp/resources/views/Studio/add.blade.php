@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.nav')
 
 @section('content')
     <form action="/studio/add" method="post">

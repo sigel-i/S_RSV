@@ -1,0 +1,6 @@
+{
+    "require": {
+        "simplehtmldom/simplehtmldom": "dev-master",
+        "weidner/goutte": "^2.0"
+    }
+}

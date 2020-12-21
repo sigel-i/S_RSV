@@ -16,6 +16,12 @@
     </li>
 @endguest
 
+@guest
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">問い合わせ</a>
+    </li>
+@endguest
+
 @auth
     <!-- Dropdown -->
     <li class="nav-item dropdown">

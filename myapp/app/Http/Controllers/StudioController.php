@@ -18,6 +18,7 @@ class StudioController extends Controller
             'sort' => ["regex:/^(asc|desc)$/"],
             'city' => 'required',
             'column' => ["regex:/^(average_stars|count_stars)$/"],
+            'roomsize'  => 'required',
         );
     $this->validate($request, $rules);
     $sort = $request->sort;
@@ -30,23 +31,23 @@ class StudioController extends Controller
         if ($request->has('city') && $city != '指定なし') {
         // cityがある、並び替えはしない
         //http://localhost/studio?city=千代田区
-        $studios = Studio::where('city', 'like', '%'.$city.'%')->paginate(5);
+        $studios = Studio::where('city', 'like', '%'.$city.'%')->paginate(10);
 
         } elseif ($request->has('city') && $city == '指定なし') {
         // cityがない、並び替えはしない
         //http://localhost/studio?city=指定なし
-        $studios = Studio::paginate(5);
+        $studios = Studio::paginate(10);
         }
     } else {
         if ($request->has('city') && $city != '指定なし') {
         // cityがある、並び替えをする
         // http://localhost/studio?city=千代田区&sort=desc
-        $studios = Studio::where('city', 'like', '%'.$city.'%')->orderBy($column, $sort)->paginate(5);
+        $studios = Studio::where('city', 'like', '%'.$city.'%')->orderBy($column, $sort)->paginate(10);
 
         } elseif ($request->has('city') && $city == '指定なし') {
         // cityがない、並び替えをする
         // http://localhost/studio?city=指定なし&sort=desc
-        $studios = Studio::orderBy($column, $sort)->paginate(5);
+        $studios = Studio::orderBy($column, $sort)->paginate(10);
                 // dd($studios);
         }
     }
@@ -61,7 +62,7 @@ class StudioController extends Controller
     //     $studios = Studio::paginate(4);
     //   }
     $roomsize = $request->input('roomsize');
-    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sort' => $sort, 'city' => $city]);
+    return view('Studio.index', ['studios' => $studios, 'roomsize' => $roomsize, 'sort' => $sort, 'city' => $city, 'column' => $column]);
   }
 
     public function add(Request $request)

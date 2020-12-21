@@ -13,29 +13,29 @@
         </ul>
     </div>
     @endif
-    <div class="wrap">
+    <div class="wrap_add">
         <h1>スタジオ部屋・新規登録</h1>
-        <div class="center">
+        <div class="center_add">
           <label for="studio_id">スタジオ名</label>
               <select name="studio_id" id="studio_id" class="custom-select sources">
                 @foreach($studios as $key => $studio)
-                <option value="{{ $key }}">{{ $studio->name }}</option>
+                <option value="{{ $studio->id }}">{{ $studio->name }}</option>
                 @endforeach
               </select>
         </div>
-        <div class="center">
+        <div class="center_add">
             <label for="name">部屋名</label>
             <input type="text" id="name" name="name" required value="{{ old('name') }}">
         </div>
-        <div class="center">
+        <div class="center_add">
           <label for="tatami_mats">部屋の広さ</label>
           <input type="text" id="tatami_mats" name="tatami_mats" required value="{{ old('tatami_mats') }}">
         </div>
-        <div class="center">
+        <div class="center_add">
           <label for="roomsize">部屋人数</label>
           <input type="text" id="roomsize" name="roomsize" required value="{{ old('roomsize') }}">
         </div>
-        <div class="center">
+        <div class="center_add">
           <button class="btn-flat-border" type="submit">新規登録</button>
         </div>
       </div>

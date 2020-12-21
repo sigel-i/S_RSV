@@ -21,6 +21,7 @@
 
 <body>
 
+  @include('layouts.nav')
   @yield('content')
 
   <!-- JQuery -->

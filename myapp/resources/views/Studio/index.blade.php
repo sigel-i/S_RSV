@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.nav')
 
 
 @section('content')
@@ -58,6 +57,7 @@
           </ul>
       @endforeach
  </div>
+ {{ $studios->appends(['city' => $city, 'roomsize' => $roomsize,'sort' => $sort, 'column' => $column])->links('pagination::default') }}
  <script>
    function test2() {
      console.log(2000);

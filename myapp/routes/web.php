@@ -56,3 +56,9 @@ Route::get('studios/{id}', 'StudioController@show')->where('id', '[0-9]+');
 Route::get('/', 'csvimportsController@index')->name('csvimport_index');
 
 Route::post('/import', 'csvimportsController@import')->name('csvimport_import');
+
+Route::get('/contact', 'ContactController@index')->name('contact.index');
+
+Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
+
+Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
