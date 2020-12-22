@@ -39,8 +39,8 @@ return [
             'host' => env('MAIL_HOST', 'smtp.gmail.com'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('directors.ishii@gmail.com'),
-            'password' => env('zvmgmzmzoxxuzcob'),
+            'username' => env('MAIL_USERNAME','directors.ishii@gmail.com'),
+            'password' => env('MAIL_PASSWORD','dtkmbnpjvpuapqvs'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -85,7 +85,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'directors.ishii@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'directors'),
+        'name' => env('MAIL_FROM_NAME', 'studiosearch'),
     ],
 
     /*

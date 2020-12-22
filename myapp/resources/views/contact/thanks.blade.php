@@ -1,5 +1,7 @@
-@extends('layout_app')
+@extends('layouts.app')
 
 @section('content')
-<h1>{{ __('送信完了') }}</h1>
+<div class="center_smtp">
+  <h4>{{ __('送信完了') }}</h4>
+</div>
 @endsection

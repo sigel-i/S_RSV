@@ -220,10 +220,19 @@ label3 {
   transform: translate(-50%, -50%);
 }
 
+.center_smtp {
+  width: 100px;
+  position: absolute;
+  display: block;
+  top: 50%; left: 50%; right: 50%;
+  transform: translate(-50%, -50%);
+}
+
 textarea {
   resize: none;
   height:100px;
 }
+
 
 //検索
 .search-area,
