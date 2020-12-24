@@ -307,7 +307,7 @@ class StudioTableSeeder extends Seeder
             'city' => '豊島区',
             'tel' => '03-5391-3411',
             'url' => 'http://www.vivo-studio.com/',
-            'image_url' => 'http://www.vivo-studio.com/images/default/logo.png',
+            'image_url' => 'http://www.vivo-studio.com/images/default/footer-logo.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1222,5 +1222,954 @@ class StudioTableSeeder extends Seeder
             'image_url' => 'https://pbs.twimg.com/profile_images/460591536078458880/V4yjYkAA.jpeg',
         ];
         DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>102,
+            'name' => 'スタジオレッド綾瀬店',
+            'email' => 'mailto@studio-red.com',
+            'pref' => '東京都',
+            'city' => '足立区',
+            'tel' => '03-3606-4441',
+            'url' => 'https://www.studio-red.com/',
+            'image_url' => 'https://www.studio-red.com/wp-content/themes/studio-red/images/common/img_hd_logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>103,
+            'name' => 'ホワイトロードスタジオ',
+            'email' => 'takao@whiteroad.com',
+            'pref' => '東京都',
+            'city' => '豊島区',
+            'tel' => '03-3915-4465',
+            'url' => 'http://www.whiteroad.com/',
+            'image_url' => 'http://www.whiteroad.com/images/top-logo.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>104,
+            'name' => 'ブラックホールstudio',
+            'email' => 'test73@studio.jp',
+            'pref' => '東京都',
+            'city' => '豊島区',
+            'tel' => '03-6912-9604',
+            'url' => 'http://blackhole-studio.jp/index.html',
+            'image_url' => 'http://blackhole-studio.jp/img/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>105,
+            'name' => 'BeatsParadise',
+            'email' => 'kirameki@beats-paradise.info',
+            'pref' => '東京都',
+            'city' => '豊島区',
+            'tel' => '03-6912-1221',
+            'url' => 'https://www.beats-paradise.info/index.html',
+            'image_url' => 'https://www.beats-paradise.info/img/common/cmn_logo.svg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>106,
+            'name' => 'スタジオDANGDANG',
+            'email' => 'info@studio-dangdang.com',
+            'pref' => '東京都',
+            'city' => '豊島区',
+            'tel' => '03-6903-7122',
+            'url' => 'http://www.studio-dangdang.com/index.html',
+            'image_url' => 'http://www.studio-dangdang.com/logo1111.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>107,
+            'name' => 'スタジオ ニド',
+            'email' => 'info@studio-nido.com',
+            'pref' => '東京都',
+            'city' => '調布市',
+            'tel' => '042-499-3439',
+            'url' => 'https://www.studio-nido.com/index.html',
+            'image_url' => 'https://www.studio-nido.com/img/main_gra01.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>108,
+            'name' => '調布サン・ミュージックスタジオ',
+            'email' => 'info@sunmusicstudio.com',
+            'pref' => '東京都',
+            'city' => '調布市',
+            'tel' => '042-480-2333',
+            'url' => 'http://www.sunmusicstudio.com/index.html',
+            'image_url' => 'http://www.sunmusicstudio.com/_src/138/logo.png?v=1584773669256',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>109,
+            'name' => 'STUDIO VITO',
+            'email' => 'info@studio-vito.com',
+            'pref' => '東京都',
+            'city' => '西東京市',
+            'tel' => '042-423-6914',
+            'url' => 'http://www.studio-vito.com/access.html',
+            'image_url' => 'http://www.studio-vito.com/_src/sc2684/head.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>110,
+            'name' => 'SEISHO STUDIO',
+            'email' => 'test74@studio.jp',
+            'pref' => '東京都',
+            'city' => '練馬区',
+            'tel' => '03-3928-9131',
+            'url' => 'https://www.studio-seisho.com/',
+            'image_url' => 'https://www.studio-seisho.com/sonorsq2/wp-content/uploads/2017/04/logo3_b.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>111,
+            'name' => 'STUDIO YH',
+            'email' => 'test75@studio.jp',
+            'pref' => '東京都',
+            'city' => '立川市',
+            'tel' => '042-534-9994',
+            'url' => 'http://www.studio-yh.jp/index.html',
+            'image_url' => 'http://www.studio-yh.jp/common/img/logo_header.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>112,
+            'name' => 'スタジオセラフィ',
+            'email' => 'test75@studio.jp',
+            'pref' => '東京都',
+            'city' => '目黒区',
+            'tel' => '03-6452-3314',
+            'url' => 'https://selafy.com/',
+            'image_url' => 'https://selafy.com/_img/ja/resource/9/logo/_/',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>113,
+            'name' => 'YOKOTA BASE STUDIO',
+            'email' => 'test76@studio.jp',
+            'pref' => '東京都',
+            'city' => '町田市',
+            'tel' => '042-723-4888',
+            'url' => 'https://yokotabasestudio.com/',
+            'image_url' => 'https://yokotabasestudio.com/img/logo01.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>114,
+            'name' => 'STUDIO ACT',
+            'email' => 'machida@studioact.co.jp',
+            'pref' => '東京都',
+            'city' => '町田市',
+            'tel' => '042-722-0005',
+            'url' => 'http://studioact.co.jp/',
+            'image_url' => 'http://studioact.co.jp/img/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>115,
+            'name' => 'スタジオBEN辿',
+            'email' => 'test77@studio.jp',
+            'pref' => '東京都',
+            'city' => '狛江市',
+            'tel' => '03-5438-2302',
+            'url' => 'http://www.benten-st.com/index.html',
+            'image_url' => 'http://www.benten-st.com/images/benten_banner.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>116,
+            'name' => 'STUDIO FORTE',
+            'email' => 'test78@studio.jp',
+            'pref' => '東京都',
+            'city' => '港区',
+            'tel' => '03-3403-4350',
+            'url' => 'http://studio-forte.net/',
+            'image_url' => 'http://studio-forte.net/g/index.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>117,
+            'name' => 'OUR HOUSE',
+            'email' => 'test79@studio.jp',
+            'pref' => '東京都',
+            'city' => '港区',
+            'tel' => '03-3451-7423',
+            'url' => 'http://www.our-house.jp/index.html/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>118,
+            'name' => '芝浦スタジオ',
+            'email' => 'shibaura-booking2021@shibaura-st.co.jp',
+            'pref' => '東京都',
+            'city' => '港区',
+            'tel' => '03-3769-4649',
+            'url' => 'http://shiba-st.com/',
+            'image_url' => 'http://shiba-st.com/wp/wp-content/uploads/2017/04/shibaura_logo.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>119,
+            'name' => 'Majestic Studio',
+            'email' => 'majestic@st-ma.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3378-2688',
+            'url' => 'http://www.st-ma.jp/majestic/index.html',
+            'image_url' => 'http://www.st-ma.jp/majestic/title.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>120,
+            'name' => 'セオリスタジオ',
+            'email' => 'test80@studio.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3466-3551',
+            'url' => 'http://www.theorystudio.co.jp/index.html',
+            'image_url' => 'http://www.theorystudio.co.jp/images/common/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>121,
+            'name' => 'スタジオミュージアム',
+            'email' => 'test81@studio.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3373-8200',
+            'url' => 'http://www.theorystudio.co.jp/index.html',
+            'image_url' => 'http://studio-museum.com/studio/wp-content/uploads/2017/08/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>122,
+            'name' => 'SHIBUYA STUDIO K2',
+            'email' => 'test82@studio.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3462-4483',
+            'url' => 'http://www.studiok2.tokyo/index.html',
+            'image_url' => 'http://www.studiok2.tokyo/images/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>123,
+            'name' => 'STUDIO KEYBOARD',
+            'email' => 'test83@studio.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3370-5258',
+            'url' => 'http://studiokeyboard.net/index.html',
+            'image_url' => 'http://studiokeyboard.net/images/index_r2_c1.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>124,
+            'name' => 'シュールサウンドスタジオ',
+            'email' => 'studio_info@s-u-r.co.jp',
+            'pref' => '東京都',
+            'city' => '渋谷区',
+            'tel' => '03-3378-1555',
+            'url' => 'https://s-u-r.co.jp/index.html',
+            'image_url' => 'https://s-u-r.co.jp/parts/sub_top.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>125,
+            'name' => 'サウンドスタジオM小岩店',
+            'email' => 'test84@studio.jp',
+            'pref' => '東京都',
+            'city' => '江戸川区',
+            'tel' => '03-3672-6316',
+            'url' => 'https://soundstudio-m.com/koiwa/index.html',
+            'image_url' => 'https://soundstudio-m.com/images/header_logo_white.svg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>126,
+            'name' => 'サウンドスタジオM一之江店',
+            'email' => 'test85@studio.jp',
+            'pref' => '東京都',
+            'city' => '江戸川区',
+            'tel' => '03-3672-6316',
+            'url' => 'https://soundstudio-m.com/koiwa/index.html',
+            'image_url' => 'https://soundstudio-m.com/images/header_logo_white.svg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>127,
+            'name' => 'Studio Leda',
+            'email' => 'info@studioleda.com',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-23-7227',
+            'url' => 'https://www.studioleda.com/index.html',
+            'image_url' => 'https://www.studioleda.com/images/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>128,
+            'name' => 'Studio 壱之助',
+            'email' => 'test86@studio.jp',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-49-3987',
+            'url' => 'http://ichinosuke.jp/',
+            'image_url' => 'http://ichinosuke.jp/images/ichinosuke_logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>129,
+            'name' => 'スタジオ・アルファ・ベガ',
+            'email' => 'test87@studio.jp',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-20-0731',
+            'url' => 'https://www.studioleda.com/vega/index.html',
+            'image_url' => 'https://www.studioleda.com/vega/images/logo2.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>130,
+            'name' => 'サウンドスタジオキッカ吉祥寺',
+            'email' => 'test88@studio.jp',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-76-8615',
+            'url' => 'https://studiokicca.com/',
+            'image_url' => 'https://studiokicca.com/img/common/logo.svg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>131,
+            'name' => 'GOK SOUND',
+            'email' => 'test89@studio.jp',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-20-8372',
+            'url' => 'https://www.gok.jp/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>132,
+            'name' => '吉祥寺音楽スタジオ本家',
+            'email' => 'test90@studio.jp',
+            'pref' => '東京都',
+            'city' => '武蔵野市',
+            'tel' => '0422-21-2517',
+            'url' => 'http://no-scooter.com/honke-test/honke.html',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>133,
+            'name' => 'スタジオサウンドスクエア',
+            'email' => 'soundsquare@mbm.nifty.com',
+            'pref' => '東京都',
+            'city' => '東村山市',
+            'tel' => '042-397-1175',
+            'url' => 'http://soundsquare.la.coocan.jp/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>134,
+            'name' => 'スタジオサスフォー',
+            'email' => 'webmaster@tokyo-st.net',
+            'pref' => '東京都',
+            'city' => '東久留米市',
+            'tel' => '042-472-2055',
+            'url' => 'http://www.tokyo-st.net/pc/index.html',
+            'image_url' => 'http://www.tokyo-st.net/pc/banner/main/sus4logo3c.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>135,
+            'name' => 'ロサンゼルスクラブ東高円寺',
+            'email' => 'staff@losangelesclub.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-3314-888',
+            'url' => 'https://www.losangelesclub.jp/',
+            'image_url' => 'https://www.losangelesclub.jp/wp-content/uploads/banner-la160-931-1.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>136,
+            'name' => 'P.I.G.studio',
+            'email' => 'test91@studio.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-3310-9311',
+            'url' => 'http://pigstudio.apricott.org/index.html',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>137,
+            'name' => 'SOUND STUDIO REVIVAL',
+            'email' => 'test92@studio.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-6279-9113',
+            'url' => 'http://heavysick.co.jp/revival/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>138,
+            'name' => 'STUDIO Zot',
+            'email' => 'info@studiozot.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-5356-6388',
+            'url' => 'http://studiozot.jp/pc/2013/index.php',
+            'image_url' => 'http://studiozot.jp/img/pc/studiozot_logo2.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>139,
+            'name' => 'South Sound Studio',
+            'email' => 'test94@studio.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-3316-3061',
+            'url' => 'http://southsoundstudio.com/',
+            'image_url' => 'http://southsoundstudio.com/wp-content/uploads/2014/10/header_logo.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>140,
+            'name' => 'HILL VALLEY STUDIO',
+            'email' => 'info@hillvalleystudio.net',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-6302-1718',
+            'url' => 'https://hillvalleystudio.net/',
+            'image_url' => 'https://hillvalleystudio.net/img/hillvalleylogo.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>141,
+            'name' => 'BAZOOKA STUDIO',
+            'email' => 'info@bazooka-studio.com',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3360-3377',
+            'url' => 'https://bazookastudio.com/',
+            'image_url' => 'https://bazookastudio.com/wp-content/uploads/2020/04/logo-bs.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>142,
+            'name' => 'STUDIO MUSIC CITY',
+            'email' => 'studio.music.city@gmail.com',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3205-1283',
+            'url' => 'http://studio-music-city.com/',
+            'image_url' => 'http://studio-music-city.com/wp-content/uploads/2017/04/482906_401455076579469_1199147293_n.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>143,
+            'name' => 'STUDIO PIT INN',
+            'email' => 'test95@studio.jp',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3354-2067',
+            'url' => 'http://marmie.heteml.jp/pit-inn/studio/',
+            'image_url' => 'http://marmie.heteml.jp/pit-inn/studio/themes/artnomad_v2/images/logo3.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>144,
+            'name' => 'Sound Studio Vantage',
+            'email' => 'test96@studio.jp',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-5989-1877',
+            'url' => 'http://www.studiovantage.jp/',
+            'image_url' => 'http://www.studiovantage.jp/images/logo.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>145,
+            'name' => 'SOUND STUDIO CRUE',
+            'email' => 'test97@studio.jp',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3352-8530',
+            'url' => 'http://studio-crue.com/',
+            'image_url' => 'http://studio-crue.com/img/all/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>146,
+            'name' => '御苑音楽スタジオ',
+            'email' => 'test98@studio.jp',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3351-2821',
+            'url' => 'https://www.gyost.com/index.html',
+            'image_url' => 'https://www.gyost.com/_src/sc247/8CE4899125-1.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>147,
+            'name' => 'STUDIO M',
+            'email' => 'test99@studio.jp',
+            'pref' => '東京都',
+            'city' => '新宿区',
+            'tel' => '03-3371-3756',
+            'url' => 'https://www.okubo-studio-m.com/index.html',
+            'image_url' => 'https://www.okubo-studio-m.com/images/studio-m-logo.png?crc=5573126',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>148,
+            'name' => 'Studio Flight',
+            'email' => 'test100@studio.jp',
+            'pref' => '東京都',
+            'city' => '府中市',
+            'tel' => '042-333-7151',
+            'url' => 'http://studioflight.net/',
+            'image_url' => 'http://studioflight.net/images/logo.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>149,
+            'name' => 'Studio34',
+            'email' => 'test101@studio.jp',
+            'pref' => '東京都',
+            'city' => '府中市',
+            'tel' => '042-386-0034',
+            'url' => 'http://mermaid-co.jp/studio34/',
+            'image_url' => 'http://mermaid-co.jp/studio34/_src/sc428/sign.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>150,
+            'name' => 'ガードアイランドスタジオ蒲田店',
+            'email' => 'test102@studio.jp',
+            'pref' => '東京都',
+            'city' => '大田区',
+            'tel' => '03-5703-2227',
+            'url' => 'http://gourdisland-music.jp/kamata/',
+            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>151,
+            'name' => 'ガードアイランドスタジオ明大前店',
+            'email' => 'test103@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-5300-4144',
+            'url' => 'http://gourdisland-music.jp/meidaimae/',
+            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>152,
+            'name' => 'ガードアイランドスタジオ下北沢店',
+            'email' => 'test104@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-3414-9833',
+            'url' => 'http://gourdisland-music.jp/shimokitazawa/',
+            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>153,
+            'name' => 'ガードアイランドスタジオ下北沢ウエスト店',
+            'email' => 'test105@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-5430-3334',
+            'url' => 'http://gourdisland-music.jp/shimokitawest/',
+            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>154,
+            'name' => '音楽スタジオ サウンドパーク',
+            'email' => 'test102@studio.jp',
+            'pref' => '東京都',
+            'city' => '大田区',
+            'tel' => '03-3764-0928',
+            'url' => 'http://studio-soundpark.com/img/logo.jpg',
+            'image_url' => 'http://studio-soundpark.com/index.html',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>155,
+            'name' => 'スタジオ ABR',
+            'email' => 'test103@studio.jp',
+            'pref' => '東京都',
+            'city' => '多摩市',
+            'tel' => '',
+            'url' => 'http://ssk.abr.jp/index.html',
+            'image_url' => 'http://ssk.abr.jp/images/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>156,
+            'name' => 'M.studio多摩センター店',
+            'email' => 'test104@studio.jp',
+            'pref' => '東京都',
+            'city' => '多摩市',
+            'tel' => '042-313-7735',
+            'url' => 'http://www.mare-co.jp/tamacenterstudio.htm',
+            'image_url' => 'http://www.mare-co.jp/bar.tc.top.2015.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>157,
+            'name' => 'M.studio永山店',
+            'email' => 'test104@studio.jp',
+            'pref' => '東京都',
+            'city' => '多摩市',
+            'tel' => '042-339-5453',
+            'url' => 'http://www.mare-co.jp/nagayamatop.htm',
+            'image_url' => 'http://www.mare-co.jp/mstlogo2016ng.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>158,
+            'name' => 'BEAT WAVE',
+            'email' => 'test105@studio.jp',
+            'pref' => '東京都',
+            'city' => '墨田区',
+            'tel' => '03-5630-3226',
+            'url' => 'http://bws.music.coocan.jp/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>159,
+            'name' => 'SOUND STUDIO CROSSROAD',
+            'email' => 'test106@studio.jp',
+            'pref' => '東京都',
+            'city' => '国立市',
+            'tel' => '042-577-3521',
+            'url' => 'http://crossroad-studio.com/',
+            'image_url' => 'http://crossroad-studio.com/img/common/template/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>160,
+            'name' => 'SOUND STUDIO CROSSROAD',
+            'email' => 'test107@studio.jp',
+            'pref' => '東京都',
+            'city' => '国分寺市',
+            'tel' => '042-326-5656',
+            'url' => 'http://first-avenue-studio.com/index.html',
+            'image_url' => 'http://first-avenue-studio.com/src/images/logo_sample2.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>161,
+            'name' => 'ミュージックスタジオ ensemble',
+            'email' => 'test108@studio.jp',
+            'pref' => '東京都',
+            'city' => '台東区',
+            'tel' => '03-3841-2904',
+            'url' => 'https://s-ens.net/',
+            'image_url' => 'https://s-ens.net/img/common/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>162,
+            'name' => '東京倶楽部',
+            'email' => 'test109@studio.jp',
+            'pref' => '東京都',
+            'city' => '文京区',
+            'tel' => '03-6801-8322',
+            'url' => 'https://tokyo-club.com/studio/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>163,
+            'name' => '東京倶楽部',
+            'email' => 'test110@studio.jp',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-3293-6056',
+            'url' => 'https://tokyo-club.com/studio/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>164,
+            'name' => '東京倶楽部',
+            'email' => 'test111@studio.jp',
+            'pref' => '東京都',
+            'city' => '品川区',
+            'tel' => '03-6417-0166',
+            'url' => 'https://tokyo-club.com/studio/',
+            'image_url' => '../images/666897_m.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>165,
+            'name' => 'Studio J',
+            'email' => 'test112@studio.jp',
+            'pref' => '東京都',
+            'city' => '北区',
+            'tel' => '03-3903-7506',
+            'url' => 'http://www.airwave.co.jp/studioj/',
+            'image_url' => 'http://www.airwave.co.jp/studioj/img/top-img.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>166,
+            'name' => 'Studio nei八王子',
+            'email' => 'test113@studio.jp',
+            'pref' => '東京都',
+            'city' => '八王子市',
+            'tel' => '042-642-1113',
+            'url' => 'https://www.studionei.com/',
+            'image_url' => 'https://image.jimcdn.com/app/cms/image/transf/dimension=550x10000:format=png/path/s440d6d082766f710/image/i9707af45b03f70a8/version/1499507830/image.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>167,
+            'name' => 'Studio nei立川',
+            'email' => 'test114@studio.jp',
+            'pref' => '東京都',
+            'city' => '立川市',
+            'tel' => '042-525-5678',
+            'url' => 'https://www.t-studionei.com/',
+            'image_url' => 'https://image.jimcdn.com/app/cms/image/transf/dimension=550x10000:format=png/path/s440d6d082766f710/image/i9707af45b03f70a8/version/1499507830/image.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>168,
+            'name' => '島村楽器 八王子店',
+            'email' => 'test115@studio.jp',
+            'pref' => '東京都',
+            'city' => '八王子市',
+            'tel' => '042-656-7321',
+            'url' => 'https://www.shimamura.co.jp/shop/hachioji/studio-guide',
+            'image_url' => 'https://www.shimamura.co.jp/img/logo.svg?up=20180419',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>169,
+            'name' => 'Nakano Space Q',
+            'email' => 'test116@studio.jp',
+            'pref' => '東京都',
+            'city' => '中野区',
+            'tel' => '03-6382-7325',
+            'url' => 'https://nakano-spaceq.com/',
+            'image_url' => 'https://nakano-spaceq.com/wp-content/themes/nakano-spaceq.com/img/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>170,
+            'name' => 'トラフィック スタジオ',
+            'email' => 'test117@studio.jp',
+            'pref' => '東京都',
+            'city' => '中野区',
+            'tel' => '03-3336-2226',
+            'url' => 'http://www.traffic-st.jp/',
+            'image_url' => 'http://www.traffic-st.jp/image/traffic_logo_sub.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>171,
+            'name' => 'SONIC BAND STUDIO',
+            'email' => 'test118@studio.jp',
+            'pref' => '東京都',
+            'city' => '中野区',
+            'tel' => '03-3223-1009',
+            'url' => 'https://sonicbandstudio.com/',
+            'image_url' => 'https://sonicbandstudio.com/pc/wp-content/themes/thememagic/images/sonictitle.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>172,
+            'name' => 'STUDIO LIFE',
+            'email' => 'test119@studio.jp',
+            'pref' => '東京都',
+            'city' => '中野区',
+            'tel' => '03-3386-7239',
+            'url' => 'https://www.studio-life.jp/',
+            'image_url' => 'https://static.wixstatic.com/media/e6e7d4_42a2ae046cac43fa86b21c10c1c82c50~mv2.png/v1/fill/w_544,h_64,al_c,q_85,usm_0.66_1.00_0.01/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%201.webp',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>173,
+            'name' => 'LANDRUTH',
+            'email' => 'mail@landruth.com',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-5481-7433',
+            'url' => 'https://www.landruth.com/',
+            'image_url' => 'https://image.jimcdn.com/app/cms/image/transf/dimension=1060x10000:format=png/path/s9a069b085ff8a8d0/image/idc5869d10119e27e/version/1604555176/image.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>174,
+            'name' => 'TADPOLE STUDIO',
+            'email' => 'test120@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-3428-5711',
+            'url' => 'https://www.tadpolestudio.net/kyodo/index.html',
+            'image_url' => 'https://www.tadpolestudio.net/img/logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>175,
+            'name' => 'Takagi&apos;s Home',
+            'email' => 'test121@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-3465-6001',
+            'url' => 'http://www.takagis.net/',
+            'image_url' => 'http://www.takagis.net/home/img/TAKAGI%27S20%25.GIF',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>176,
+            'name' => 'スタジオファミリア',
+            'email' => 'sanchafamilia@gmail.com',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-6805-2131',
+            'url' => 'http://studiofamilia.net/SANCHA/index.html#studiogo',
+            'image_url' => 'http://studiofamilia.net/SANCHA/webpic/stampwhite.gif',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>177,
+            'name' => 'スタジオファミリア',
+            'email' => 'test122@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-5314-9119',
+            'url' => 'https://studiozeronine.com/',
+            'image_url' => 'https://studiozeronine.com/wp-content/uploads/2018/10/studio091-1.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>178,
+            'name' => 'J&apos;Z STUDIO',
+            'email' => 'test123@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-6909-1181',
+            'url' => 'http://jz-studio.jp/karasuyamaten.html',
+            'image_url' => 'http://jz-studio.jp/images/banner4.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>179,
+            'name' => 'CIRCLE SOUNDS',
+            'email' => 'test124@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-3703-8651',
+            'url' => 'https://circlesounds.com/',
+            'image_url' => 'https://circlesounds.com/wp-content/uploads/2017/04/cropped-.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>180,
+            'name' => 'APPLES MUSIC STUDIO',
+            'email' => 'test125@studio.jp',
+            'pref' => '東京都',
+            'city' => '世田谷区',
+            'tel' => '03-6809-7920',
+            'url' => 'https://www.apples-music.com/index.html',
+            'image_url' => 'https://www.apples-music.com/img/site-title.svg',
+        ];
+        DB::table('studios')->insert($param);
+
     }
 }
