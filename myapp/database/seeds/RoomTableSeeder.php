@@ -101,14 +101,6 @@ class RoomTableSeeder extends Seeder
         DB::table('rooms')->insert($param);
 
         $param = [
-            'name' => 'R/P STUDIO',
-            'studio_id' => '2',
-            'tatami_mats' => '6帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
             'name' => 'A1st',
             'studio_id' => '2',
             'tatami_mats' => '9帖',
@@ -221,14 +213,6 @@ class RoomTableSeeder extends Seeder
         DB::table('rooms')->insert($param);
 
         $param = [
-            'name' => 'REC.Booth',
-            'studio_id' => '4',
-            'tatami_mats' => '5帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
             'name' => 'B1st',
             'studio_id' => '4',
             'tatami_mats' => '14帖',
@@ -289,79 +273,6 @@ class RoomTableSeeder extends Seeder
             'studio_id' => '4',
             'tatami_mats' => '21帖',
             'roomsize' => '5人以上',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'Booth1',
-            'studio_id' => '4',
-            'tatami_mats' => '3帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'Booth2',
-            'studio_id' => '4',
-            'tatami_mats' => '3帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P1st',
-            'studio_id' => '4',
-            'tatami_mats' => '6帖',
-            'roomsize' => '3人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P2st',
-            'studio_id' => '4',
-            'tatami_mats' => '9帖',
-            'roomsize' => '3人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P3st',
-            'studio_id' => '4',
-            'tatami_mats' => '5帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-
-        $param = [
-            'name' => 'P5st',
-            'studio_id' => '4',
-            'tatami_mats' => '5帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P9st',
-            'studio_id' => '4',
-            'tatami_mats' => '5帖',
-            'roomsize' => '2人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P7st',
-            'studio_id' => '4',
-            'tatami_mats' => '2.5帖',
-            'roomsize' => '1人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'P8st',
-            'studio_id' => '4',
-            'tatami_mats' => '3帖',
-            'roomsize' => '2人',
         ];
         DB::table('rooms')->insert($param);
 
@@ -450,14 +361,6 @@ class RoomTableSeeder extends Seeder
             'studio_id' => '5',
             'tatami_mats' => '9帖',
             'roomsize' => '3人',
-        ];
-        DB::table('rooms')->insert($param);
-
-        $param = [
-            'name' => 'VPBooth',
-            'studio_id' => '5',
-            'tatami_mats' => '4帖',
-            'roomsize' => '2人',
         ];
         DB::table('rooms')->insert($param);
     }
