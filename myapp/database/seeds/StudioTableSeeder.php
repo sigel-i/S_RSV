@@ -19,7 +19,7 @@ class StudioTableSeeder extends Seeder
             'city' => '千代田区',
             'tel' => '03-3294-6909',
             'url' => 'http://rinky.info/studio/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -547,7 +547,7 @@ class StudioTableSeeder extends Seeder
             'city' => '江戸川区',
             'tel' => '03-5676-2135',
             'url' => 'https://rinky.info/studio/kasai/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -607,7 +607,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-3420-3721',
             'url' => 'https://rinky.info/studio/umegaoka/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -619,7 +619,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-5465-6569',
             'url' => 'https://rinky.info/studio/shimokitazawa1/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -631,7 +631,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-3466-0169',
             'url' => 'https://rinky.info/studio/shimokitazawa2/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -643,7 +643,7 @@ class StudioTableSeeder extends Seeder
             'city' => '目黒区',
             'tel' => '03-3718-7176',
             'url' => 'https://rinky.info/studio/toritsu/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -655,7 +655,7 @@ class StudioTableSeeder extends Seeder
             'city' => '中野区',
             'tel' => '03-5385-0354',
             'url' => 'https://rinky.info/studio/nakano/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -667,7 +667,7 @@ class StudioTableSeeder extends Seeder
             'city' => '杉並区',
             'tel' => '03-3393-3359',
             'url' => 'https://rinky.info/studio/ogikubo/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -679,7 +679,7 @@ class StudioTableSeeder extends Seeder
             'city' => '杉並区',
             'tel' => '03-3335-9131',
             'url' => 'https://rinky.info/studio/nishiogi/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -691,7 +691,7 @@ class StudioTableSeeder extends Seeder
             'city' => '武蔵野市',
             'tel' => '0422-22-3516',
             'url' => 'https://rinky.info/studio/kichijoji1/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -703,7 +703,7 @@ class StudioTableSeeder extends Seeder
             'city' => '武蔵野市',
             'tel' => '0422-20-2355',
             'url' => 'https://rinky.info/studio/ores/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -715,7 +715,7 @@ class StudioTableSeeder extends Seeder
             'city' => '町田市',
             'tel' => '042-723-6951',
             'url' => 'https://rinky.info/studio/machida/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -727,7 +727,7 @@ class StudioTableSeeder extends Seeder
             'city' => '八王子市',
             'tel' => '042-626-2282',
             'url' => 'https://rinky.info/studio/hachioji1/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -739,7 +739,7 @@ class StudioTableSeeder extends Seeder
             'city' => '八王子市',
             'tel' => '042-627-1200',
             'url' => 'https://rinky.info/studio/hachioji2/',
-            'image_url' => 'http://studio-navi.jp/img_photo/pic_main_1/Rinkydinkstudio-1.jpg',
+            'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
 
