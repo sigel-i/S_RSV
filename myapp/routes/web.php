@@ -17,6 +17,10 @@ Route::get('/sass', function () {
     return view('sass');
 });
 
+Route::get('/', 'StudioController@index');
+
+// Route::get('/', 'csvimportsController@index')->name('csvimport_index');
+
 Route::get('/user',  'UserController@index')
         ->middleware('auth');
 
@@ -53,7 +57,7 @@ Route::post('/studio/review', 'CommentController@create');
 
 Route::get('studios/{id}', 'StudioController@show')->where('id', '[0-9]+');
 
-Route::get('/', 'csvimportsController@index')->name('csvimport_index');
+
 
 Route::post('/import', 'csvimportsController@import')->name('csvimport_import');
 
