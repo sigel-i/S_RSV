@@ -42,9 +42,13 @@ a {
 }
 
 .container p {
-  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  font-size: 22px;
   font-weight: bold;
-  font-family: Helvetica
+  font-family: Helvetica;
+  color: #ff7043;
 }
 
 .img_size{
@@ -121,6 +125,7 @@ p {
 
 .item {
   margin-top: 5px;
+  font-size: 14px;
 }
 
 div.wrap {
@@ -365,7 +370,7 @@ textarea {
     display: block;
     padding: 0px 10px;
 }
-    padding: 0px 40px;
+    padding: 0px 10px;
     border-top: 1px solid #ccc;
     margin-top: 15px;
     display: flex;
@@ -390,7 +395,7 @@ textarea {
   margin-right: auto;
   margin-top: 20px;
   border-collapse: collapse;
-  width: 450px;
+  width: 400px;
   border-collapse:separate;
   border-spacing: 0;
 }
@@ -476,7 +481,7 @@ list-style: none;
   margin-right: auto;
   margin-top: 20px;
   border-collapse: collapse;
-  width: 450px;
+  width: 400px;
   border-collapse:separate;
   border-spacing: 0;
 }
@@ -556,8 +561,8 @@ input[type=password] {
   padding: 0.3em 1em;
   text-decoration: none;
   color: #fff;
-  border: solid 2px #ff6d00;
-  background-color: #ff6d00;
+  border: solid 2px #e65100;
+  background-color: #e65100;
   border-radius: 3px;
   transition: .4s;
 }
@@ -601,7 +606,7 @@ input[type="radio"] + label:before {
   display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #6cc0e5;
+  border: 1px solid #ef6c00;
   position: absolute;
   left: 0;
   top: 0;
@@ -645,7 +650,7 @@ input[type="radio"]:checked + label:before {
       font-weight: 300;
       color: #fff;
       line-height: 60px;
-      background: #5c9cd8;
+      background: #ef6c00;
       border-radius: 4px;
       cursor: pointer;
     }
@@ -756,7 +761,7 @@ input[type="radio"]:checked + label:before {
   }
 
   .paginationWrap ul.pagination li a.active {
-      background-color: #4b90f6;
+      background-color:#e65100;
       color: white;
       border-radius: 5px;
       width: 38px;
