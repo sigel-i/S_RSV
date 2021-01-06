@@ -5,6 +5,7 @@
 <div class="search-area">
 <form action="/studio" method="get">
   @csrf
+  <title>{{ config('app.name') }}</title>
   <div class="wrap">
       <div class="overlay">
        <div class="search-title">Studio Search</div>

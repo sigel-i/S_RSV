@@ -1,5 +1,74 @@
 [
     {
+        "name": "artesaos/seotools",
+        "version": "v0.20.0",
+        "version_normalized": "0.20.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/artesaos/seotools.git",
+            "reference": "4216c7e57f9db2a477464f0f96a13f1cc7319dd8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/artesaos/seotools/zipball/4216c7e57f9db2a477464f0f96a13f1cc7319dd8",
+            "reference": "4216c7e57f9db2a477464f0f96a13f1cc7319dd8",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+            "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0",
+            "phpspec/phpspec": "~5.1.1 || ^6.0"
+        },
+        "time": "2020-12-27T19:47:31+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider"
+                ],
+                "aliases": {
+                    "SEOMeta": "Artesaos\\SEOTools\\Facades\\SEOMeta",
+                    "OpenGraph": "Artesaos\\SEOTools\\Facades\\OpenGraph",
+                    "Twitter": "Artesaos\\SEOTools\\Facades\\TwitterCard",
+                    "JsonLd": "Artesaos\\SEOTools\\Facades\\JsonLd",
+                    "SEO": "Artesaos\\SEOTools\\Facades\\SEOTools"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Artesaos\\SEOTools\\": "src/SEOTools/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Vinicius",
+                "email": "luiz.vinicius73@gmail.com"
+            }
+        ],
+        "description": "SEO Tools for Laravel and Lumen",
+        "keywords": [
+            "JSON-LD",
+            "laravel",
+            "lumen",
+            "metatags",
+            "opengraph",
+            "seo",
+            "seotools",
+            "webmaster"
+        ]
+    },
+    {
         "name": "doctrine/inflector",
         "version": "2.0.3",
         "version_normalized": "2.0.3.0",
@@ -147,8 +216,8 @@
     },
     {
         "name": "illuminate/collections",
-        "version": "v8.19.0",
-        "version_normalized": "8.19.0.0",
+        "version": "v8.20.1",
+        "version_normalized": "8.20.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/collections.git",
@@ -198,18 +267,64 @@
         "homepage": "https://laravel.com"
     },
     {
-        "name": "illuminate/contracts",
-        "version": "v8.19.0",
-        "version_normalized": "8.19.0.0",
+        "name": "illuminate/config",
+        "version": "v8.20.1",
+        "version_normalized": "8.20.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/illuminate/contracts.git",
-            "reference": "ecc0ae5e02efa49b50efac567f410911f75fd993"
+            "url": "https://github.com/illuminate/config.git",
+            "reference": "8441c542312b4d57220b1f942b947b6517c05008"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/contracts/zipball/ecc0ae5e02efa49b50efac567f410911f75fd993",
-            "reference": "ecc0ae5e02efa49b50efac567f410911f75fd993",
+            "url": "https://api.github.com/repos/illuminate/config/zipball/8441c542312b4d57220b1f942b947b6517c05008",
+            "reference": "8441c542312b4d57220b1f942b947b6517c05008",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/collections": "^8.0",
+            "illuminate/contracts": "^8.0",
+            "php": "^7.3|^8.0"
+        },
+        "time": "2020-10-27T15:20:30+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Illuminate\\Config\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylor@laravel.com"
+            }
+        ],
+        "description": "The Illuminate Config package.",
+        "homepage": "https://laravel.com"
+    },
+    {
+        "name": "illuminate/contracts",
+        "version": "v8.20.1",
+        "version_normalized": "8.20.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/contracts.git",
+            "reference": "073109b521aec104f11c5cf5aded97aa0e63f313"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/contracts/zipball/073109b521aec104f11c5cf5aded97aa0e63f313",
+            "reference": "073109b521aec104f11c5cf5aded97aa0e63f313",
             "shasum": ""
         },
         "require": {
@@ -217,7 +332,7 @@
             "psr/container": "^1.0",
             "psr/simple-cache": "^1.0"
         },
-        "time": "2020-12-11T14:35:03+00:00",
+        "time": "2020-12-18T14:24:20+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -245,8 +360,8 @@
     },
     {
         "name": "illuminate/macroable",
-        "version": "v8.19.0",
-        "version_normalized": "8.19.0.0",
+        "version": "v8.20.1",
+        "version_normalized": "8.20.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/macroable.git",
@@ -289,17 +404,17 @@
     },
     {
         "name": "illuminate/support",
-        "version": "v8.19.0",
-        "version_normalized": "8.19.0.0",
+        "version": "v8.20.1",
+        "version_normalized": "8.20.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/illuminate/support.git",
-            "reference": "91c965bddd834aaae650043c4726bedf00d033dd"
+            "reference": "f221a31bfd107d173510e15e34c3aa667c75602d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/support/zipball/91c965bddd834aaae650043c4726bedf00d033dd",
-            "reference": "91c965bddd834aaae650043c4726bedf00d033dd",
+            "url": "https://api.github.com/repos/illuminate/support/zipball/f221a31bfd107d173510e15e34c3aa667c75602d",
+            "reference": "f221a31bfd107d173510e15e34c3aa667c75602d",
             "shasum": ""
         },
         "require": {
@@ -323,7 +438,7 @@
             "symfony/var-dumper": "Required to use the dd function (^5.1.4).",
             "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.2)."
         },
-        "time": "2020-12-14T14:16:56+00:00",
+        "time": "2020-12-22T16:13:18+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -354,17 +469,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "2.42.0",
-        "version_normalized": "2.42.0.0",
+        "version": "2.43.0",
+        "version_normalized": "2.43.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "d0463779663437392fe42ff339ebc0213bd55498"
+            "reference": "d32c57d8389113742f4a88725a170236470012e2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d0463779663437392fe42ff339ebc0213bd55498",
-            "reference": "d0463779663437392fe42ff339ebc0213bd55498",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d32c57d8389113742f4a88725a170236470012e2",
+            "reference": "d32c57d8389113742f4a88725a170236470012e2",
             "shasum": ""
         },
         "require": {
@@ -383,7 +498,7 @@
             "phpunit/phpunit": "^7.5 || ^8.0",
             "squizlabs/php_codesniffer": "^3.4"
         },
-        "time": "2020-11-28T14:25:28+00:00",
+        "time": "2020-12-17T20:55:32+00:00",
         "bin": [
             "bin/carbon"
         ],
@@ -666,17 +781,17 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
-            "reference": "4fc769a12282a12bc47f883f04f01ff3777e369b"
+            "reference": "87d6f0a7436b03a57d4cf9a6a9cd0c83a355c49a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/4fc769a12282a12bc47f883f04f01ff3777e369b",
-            "reference": "4fc769a12282a12bc47f883f04f01ff3777e369b",
+            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/87d6f0a7436b03a57d4cf9a6a9cd0c83a355c49a",
+            "reference": "87d6f0a7436b03a57d4cf9a6a9cd0c83a355c49a",
             "shasum": ""
         },
         "require": {
@@ -692,7 +807,7 @@
         "suggest": {
             "symfony/process": ""
         },
-        "time": "2020-11-14T11:04:29+00:00",
+        "time": "2020-12-18T08:03:05+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -736,23 +851,23 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "b8d8eb06b0942e84a69e7acebc3e9c1e6e6e7256"
+            "reference": "f789e7ead4c79e04ca9a6d6162fc629c89bd8054"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/b8d8eb06b0942e84a69e7acebc3e9c1e6e6e7256",
-            "reference": "b8d8eb06b0942e84a69e7acebc3e9c1e6e6e7256",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/f789e7ead4c79e04ca9a6d6162fc629c89bd8054",
+            "reference": "f789e7ead4c79e04ca9a6d6162fc629c89bd8054",
             "shasum": ""
         },
         "require": {
             "php": ">=7.2.5"
         },
-        "time": "2020-10-28T21:31:18+00:00",
+        "time": "2020-12-08T17:02:38+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -866,17 +981,17 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "0969122fe144dd8ab2e8c98c7e03eedc621b368c"
+            "reference": "ee7cf316fb0de786cfe5ae32ee79502b290c81ea"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/0969122fe144dd8ab2e8c98c7e03eedc621b368c",
-            "reference": "0969122fe144dd8ab2e8c98c7e03eedc621b368c",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/ee7cf316fb0de786cfe5ae32ee79502b290c81ea",
+            "reference": "ee7cf316fb0de786cfe5ae32ee79502b290c81ea",
             "shasum": ""
         },
         "require": {
@@ -895,7 +1010,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2020-10-24T12:01:57+00:00",
+        "time": "2020-12-18T08:02:46+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -939,17 +1054,17 @@
     },
     {
         "name": "symfony/http-client",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-client.git",
-            "reference": "5b9fc5d85a6cec73832ff170ccd468d97dd082d9"
+            "reference": "a77cbec69ea90dea509beef29b79748c0df33a83"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-client/zipball/5b9fc5d85a6cec73832ff170ccd468d97dd082d9",
-            "reference": "5b9fc5d85a6cec73832ff170ccd468d97dd082d9",
+            "url": "https://api.github.com/repos/symfony/http-client/zipball/a77cbec69ea90dea509beef29b79748c0df33a83",
+            "reference": "a77cbec69ea90dea509beef29b79748c0df33a83",
             "shasum": ""
         },
         "require": {
@@ -980,7 +1095,7 @@
             "symfony/process": "^4.4|^5.0",
             "symfony/stopwatch": "^4.4|^5.0"
         },
-        "time": "2020-11-28T13:45:20+00:00",
+        "time": "2020-12-14T10:56:50+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1102,17 +1217,17 @@
     },
     {
         "name": "symfony/mime",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/mime.git",
-            "reference": "05f667e8fa029568964fd3bec6bc17765b853cc5"
+            "reference": "de97005aef7426ba008c46ba840fc301df577ada"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/mime/zipball/05f667e8fa029568964fd3bec6bc17765b853cc5",
-            "reference": "05f667e8fa029568964fd3bec6bc17765b853cc5",
+            "url": "https://api.github.com/repos/symfony/mime/zipball/de97005aef7426ba008c46ba840fc301df577ada",
+            "reference": "de97005aef7426ba008c46ba840fc301df577ada",
             "shasum": ""
         },
         "require": {
@@ -1133,7 +1248,7 @@
             "symfony/property-info": "^4.4|^5.1",
             "symfony/serializer": "^5.2"
         },
-        "time": "2020-10-30T14:55:39+00:00",
+        "time": "2020-12-09T18:54:12+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1820,17 +1935,17 @@
     },
     {
         "name": "symfony/translation",
-        "version": "v5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/translation.git",
-            "reference": "52f486a707510884450df461b5a6429dd7a67379"
+            "reference": "a04209ba0d1391c828e5b2373181dac63c52ee70"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/translation/zipball/52f486a707510884450df461b5a6429dd7a67379",
-            "reference": "52f486a707510884450df461b5a6429dd7a67379",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/a04209ba0d1391c828e5b2373181dac63c52ee70",
+            "reference": "a04209ba0d1391c828e5b2373181dac63c52ee70",
             "shasum": ""
         },
         "require": {
@@ -1865,7 +1980,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2020-11-28T11:24:18+00:00",
+        "time": "2020-12-08T17:03:37+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
