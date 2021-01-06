@@ -1045,7 +1045,7 @@ class StudioTableSeeder extends Seeder
 
         $param = [
             'id'=>92,
-            'name' => 'ANDY&#39;S STUDIO',
+            'name' => "ANDY'S STUDIO",
             'email' => 'test70@studio.jp',
             'pref' => '東京都',
             'city' => '世田谷区',
@@ -2029,7 +2029,7 @@ class StudioTableSeeder extends Seeder
 
         $param = [
             'id'=>175,
-            'name' => 'Takagi&apos;s Home',
+            'name' => "Takagi's Home",
             'email' => 'test121@studio.jp',
             'pref' => '東京都',
             'city' => '世田谷区',
@@ -2065,7 +2065,7 @@ class StudioTableSeeder extends Seeder
 
         $param = [
             'id'=>178,
-            'name' => 'J&apos;Z STUDIO',
+            'name' => "J'Z STUDIO",
             'email' => 'test123@studio.jp',
             'pref' => '東京都',
             'city' => '世田谷区',
