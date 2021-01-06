@@ -979,7 +979,7 @@ class StudioTableSeeder extends Seeder
             'city' => '北区',
             'tel' => '03-3903-1761',
             'url' => 'https://www.liquid-gain.com/',
-            'image_url' => '../images/header_rogo_wing_02.png',
+            'image_url' => '../images/header_rogo_wing_02_w.png',
         ];
         DB::table('studios')->insert($param);
 
