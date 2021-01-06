@@ -18,6 +18,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
   <!-- custom styles (optional) -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+  <script data-ad-client="ca-pub-2105099628040017" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
