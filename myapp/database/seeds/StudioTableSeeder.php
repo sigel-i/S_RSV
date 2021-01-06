@@ -307,7 +307,7 @@ class StudioTableSeeder extends Seeder
             'city' => '豊島区',
             'tel' => '03-5391-3411',
             'url' => 'http://www.vivo-studio.com/',
-            'image_url' => '../images/logo.jpg',
+            'image_url' => '../images/Vivo_logo.jpg',
         ];
         DB::table('studios')->insert($param);
 
