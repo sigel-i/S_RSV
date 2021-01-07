@@ -571,8 +571,8 @@ input[type=password] {
 }
 
 .btn-flat-border:hover {
-  background-color: #B0C4DE;
-  border-color: #B0C4DE;
+  background-color: #ffd180;
+  border-color: #ffd180;
   color: #5d4037;
 }
 
