@@ -175,7 +175,7 @@ class StudioTableSeeder extends Seeder
             'city' => '港区',
             'tel' => '03-6435-2260',
             'url' => 'http://www.gamp-st.com/index.html',
-            'image_url' => 'http://www.gamp-st.com/images/sub-header-information.jpg',
+            'image_url' => '../images/header.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1831,7 +1831,7 @@ class StudioTableSeeder extends Seeder
             'city' => '多摩市',
             'tel' => '042-339-5453',
             'url' => 'http://www.mare-co.jp/nagayamatop.htm',
-            'image_url' => '../images/mstlogo2016ng.jpg',
+            'image_url' => '../images/mstlogo2016ng2.jpg',
         ];
         DB::table('studios')->insert($param);
 
