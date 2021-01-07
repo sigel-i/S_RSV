@@ -18,7 +18,7 @@ class StudioTableSeeder extends Seeder
             'pref' => '東京都',
             'city' => '千代田区',
             'tel' => '03-3294-6909',
-            'url' => 'http://rinky.info/studio/studio/ochanomizu',
+            'url' => 'https://rinky.info/studio/ochanomizu/',
             'image_url' => 'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
         ];
         DB::table('studios')->insert($param);
@@ -348,6 +348,18 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
+            'id'=>29,
+            'name' => 'スタジオノード水道橋',
+            'email' => 'suidobashi@studio-node.com',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-3230-4646',
+            'url' => 'https://www.studio-node.com/HomeS.html',
+            'image_url' => 'https://www.studio-node.com/Logo1.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
             'id'=>30,
             'name' => 'Studio DIVO 亀戸',
             'email' => 'test18@studio.jp',
@@ -401,7 +413,7 @@ class StudioTableSeeder extends Seeder
             'email' => 'test20@studio.jp',
             'pref' => '東京都',
             'city' => '品川区',
-            'tel' => '03-5951-8400',
+            'tel' => '03-6910-4550',
             'url' => 'https://www.studionoah.jp/fudomae/',
             'image_url' => 'https://www.studionoah.jp/images/common/logo.svg',
         ];
@@ -1243,7 +1255,7 @@ class StudioTableSeeder extends Seeder
             'city' => '調布市',
             'tel' => '042-480-2333',
             'url' => 'http://www.sunmusicstudio.com/index.html',
-            'image_url' => 'http://www.sunmusicstudio.com/_src/138/logo.png?v=1584773669256',
+            'image_url' => '../images/logo.webp',
         ];
         DB::table('studios')->insert($param);
 
@@ -1255,7 +1267,7 @@ class StudioTableSeeder extends Seeder
             'city' => '西東京市',
             'tel' => '042-423-6914',
             'url' => 'http://www.studio-vito.com/access.html',
-            'image_url' => 'http://www.studio-vito.com/_src/sc2684/head.png',
+            'image_url' => '../images/head.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1279,7 +1291,7 @@ class StudioTableSeeder extends Seeder
             'city' => '立川市',
             'tel' => '042-534-9994',
             'url' => 'http://www.studio-yh.jp/index.html',
-            'image_url' => 'http://www.studio-yh.jp/common/img/logo_header.jpg',
+            'image_url' => '../images/logo_header.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1315,7 +1327,7 @@ class StudioTableSeeder extends Seeder
             'city' => '町田市',
             'tel' => '042-722-0005',
             'url' => 'http://studioact.co.jp/',
-            'image_url' => 'http://studioact.co.jp/img/logo.png',
+            'image_url' => '../images/ACT_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1327,7 +1339,7 @@ class StudioTableSeeder extends Seeder
             'city' => '狛江市',
             'tel' => '03-5438-2302',
             'url' => 'http://www.benten-st.com/index.html',
-            'image_url' => 'http://www.benten-st.com/images/benten_banner.png',
+            'image_url' => '../images/benten_banner.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1339,7 +1351,7 @@ class StudioTableSeeder extends Seeder
             'city' => '港区',
             'tel' => '03-3403-4350',
             'url' => 'http://studio-forte.net/',
-            'image_url' => 'http://studio-forte.net/j/000.jpg',
+            'image_url' => '../images/000.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1349,7 +1361,7 @@ class StudioTableSeeder extends Seeder
             'email' => 'test79@studio.jp',
             'pref' => '東京都',
             'city' => '港区',
-            'tel' => '03-3451-7423',
+            'tel' => '03-3451-7428',
             'url' => 'http://www.our-house.jp/index.html/',
             'image_url' => '../images/666897_m.jpg',
         ];
@@ -1363,7 +1375,7 @@ class StudioTableSeeder extends Seeder
             'city' => '港区',
             'tel' => '03-3769-4649',
             'url' => 'http://shiba-st.com/',
-            'image_url' => 'http://shiba-st.com/wp/wp-content/uploads/2017/04/shibaura_logo.gif',
+            'image_url' => '../images/shibaura_logo.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1387,7 +1399,7 @@ class StudioTableSeeder extends Seeder
             'city' => '渋谷区',
             'tel' => '03-3466-3551',
             'url' => 'http://www.theorystudio.co.jp/index.html',
-            'image_url' => 'http://www.theorystudio.co.jp/images/common/logo.png',
+            'image_url' => '../images/THEORY_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1399,7 +1411,7 @@ class StudioTableSeeder extends Seeder
             'city' => '渋谷区',
             'tel' => '03-3373-8200',
             'url' => 'http://studio-museum.com/',
-            'image_url' => 'http://studio-museum.com/studio/wp-content/uploads/2017/08/logo.png',
+            'image_url' => '../images/museum_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1411,7 +1423,7 @@ class StudioTableSeeder extends Seeder
             'city' => '渋谷区',
             'tel' => '03-3462-4483',
             'url' => 'http://www.studiok2.tokyo/index.html',
-            'image_url' => 'http://www.studiok2.tokyo/images/logo.png',
+            'image_url' => '../images/K2_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1423,7 +1435,7 @@ class StudioTableSeeder extends Seeder
             'city' => '渋谷区',
             'tel' => '03-3370-5258',
             'url' => 'http://studiokeyboard.net/index.html',
-            'image_url' => 'http://studiokeyboard.net/images/index_r2_c1.gif',
+            'image_url' => '../images/index_r2_c1.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1447,7 +1459,7 @@ class StudioTableSeeder extends Seeder
             'city' => '江戸川区',
             'tel' => '03-3672-6316',
             'url' => 'https://soundstudio-m.com/koiwa/index.html',
-            'image_url' => 'https://soundstudio-m.com/images/header_logo_white.svg',
+            'image_url' => '../images/header_logo_white.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1457,9 +1469,9 @@ class StudioTableSeeder extends Seeder
             'email' => 'test85@studio.jp',
             'pref' => '東京都',
             'city' => '江戸川区',
-            'tel' => '03-3672-6316',
-            'url' => 'https://soundstudio-m.com/koiwa/index.html',
-            'image_url' => 'https://soundstudio-m.com/images/header_logo_white.svg',
+            'tel' => '03-5674-7131',
+            'url' => 'https://soundstudio-m.com/ichinoe/index.html',
+            'image_url' => '../images/header_logo_white.svg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1483,7 +1495,7 @@ class StudioTableSeeder extends Seeder
             'city' => '武蔵野市',
             'tel' => '0422-49-3987',
             'url' => 'http://ichinosuke.jp/',
-            'image_url' => 'http://ichinosuke.jp/images/ichinosuke_logo.png',
+            'image_url' => '../images/ichinosuke_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1565,7 +1577,7 @@ class StudioTableSeeder extends Seeder
             'email' => 'staff@losangelesclub.jp',
             'pref' => '東京都',
             'city' => '杉並区',
-            'tel' => '03-3314-888',
+            'tel' => '03-3314-8887',
             'url' => 'https://www.losangelesclub.jp/',
             'image_url' => 'https://www.losangelesclub.jp/wp-content/uploads/banner-la160-931-1.gif',
         ];
@@ -1603,19 +1615,7 @@ class StudioTableSeeder extends Seeder
             'city' => '杉並区',
             'tel' => '03-5356-6388',
             'url' => 'http://studiozot.jp/pc/2013/index.php',
-            'image_url' => 'http://studiozot.jp/img/pc/studiozot_logo2.jpg',
-        ];
-        DB::table('studios')->insert($param);
-
-        $param = [
-            'id'=>139,
-            'name' => 'South Sound Studio',
-            'email' => 'test94@studio.jp',
-            'pref' => '東京都',
-            'city' => '杉並区',
-            'tel' => '03-3316-3061',
-            'url' => 'http://southsoundstudio.com/',
-            'image_url' => 'http://southsoundstudio.com/wp-content/uploads/2014/10/header_logo.gif',
+            'image_url' => '../images/studiozot_logo2.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1651,7 +1651,7 @@ class StudioTableSeeder extends Seeder
             'city' => '新宿区',
             'tel' => '03-3205-1283',
             'url' => 'http://studio-music-city.com/',
-            'image_url' => 'http://studio-music-city.com/wp-content/uploads/2017/04/482906_401455076579469_1199147293_n.jpg',
+            'image_url' => '../images/482906_401455076579469_1199147293_n.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1675,7 +1675,7 @@ class StudioTableSeeder extends Seeder
             'city' => '新宿区',
             'tel' => '03-5989-1877',
             'url' => 'http://www.studiovantage.jp/',
-            'image_url' => 'http://www.studiovantage.jp/images/logo.gif',
+            'image_url' => '../images/vantage_logo.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1687,7 +1687,7 @@ class StudioTableSeeder extends Seeder
             'city' => '新宿区',
             'tel' => '03-3352-8530',
             'url' => 'http://studio-crue.com/',
-            'image_url' => 'http://studio-crue.com/img/all/logo.png',
+            'image_url' => '../images/crue_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1723,7 +1723,7 @@ class StudioTableSeeder extends Seeder
             'city' => '府中市',
             'tel' => '042-333-7151',
             'url' => 'http://studioflight.net/',
-            'image_url' => 'http://studioflight.net/images/logo.gif',
+            'image_url' => '../images/flight_logo.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1735,7 +1735,7 @@ class StudioTableSeeder extends Seeder
             'city' => '府中市',
             'tel' => '042-386-0034',
             'url' => 'http://mermaid-co.jp/studio34/',
-            'image_url' => 'http://mermaid-co.jp/studio34/_src/sc428/sign.png',
+            'image_url' => '../images/sign.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1747,7 +1747,7 @@ class StudioTableSeeder extends Seeder
             'city' => '大田区',
             'tel' => '03-5703-2227',
             'url' => 'http://gourdisland-music.jp/kamata/',
-            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+            'image_url' => '../images/title.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1759,7 +1759,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-5300-4144',
             'url' => 'http://gourdisland-music.jp/meidaimae/',
-            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+            'image_url' => '../images/title.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1771,7 +1771,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-3414-9833',
             'url' => 'http://gourdisland-music.jp/shimokitazawa/',
-            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+            'image_url' => '../images/title.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1783,7 +1783,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-5430-3334',
             'url' => 'http://gourdisland-music.jp/shimokitawest/',
-            'image_url' => 'http://gourdisland-music.jp/wp/wp-content/themes/gourdisland/images/title.gif',
+            'image_url' => '../images/title.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1795,7 +1795,7 @@ class StudioTableSeeder extends Seeder
             'city' => '大田区',
             'tel' => '03-3764-0928',
             'url' => 'http://studio-soundpark.com/',
-            'image_url' => 'http://studio-soundpark.com/img/logo.jpg',
+            'image_url' => '../images/soundpark_logo.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1807,7 +1807,7 @@ class StudioTableSeeder extends Seeder
             'city' => '多摩市',
             'tel' => '',
             'url' => 'http://ssk.abr.jp/index.html',
-            'image_url' => 'http://ssk.abr.jp/images/logo.png',
+            'image_url' => '../images/ABR_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1819,7 +1819,7 @@ class StudioTableSeeder extends Seeder
             'city' => '多摩市',
             'tel' => '042-313-7735',
             'url' => 'http://www.mare-co.jp/tamacenterstudio.htm',
-            'image_url' => 'http://www.mare-co.jp/bar.tc.top.2015.gif',
+            'image_url' => '../images/bar.tc.top.2015.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1831,7 +1831,7 @@ class StudioTableSeeder extends Seeder
             'city' => '多摩市',
             'tel' => '042-339-5453',
             'url' => 'http://www.mare-co.jp/nagayamatop.htm',
-            'image_url' => 'http://www.mare-co.jp/mstlogo2016ng.jpg',
+            'image_url' => '../images/mstlogo2016ng.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1855,7 +1855,7 @@ class StudioTableSeeder extends Seeder
             'city' => '国立市',
             'tel' => '042-577-3521',
             'url' => 'http://crossroad-studio.com/',
-            'image_url' => 'http://crossroad-studio.com/img/common/template/logo.png',
+            'image_url' => '../images/crossroad_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1867,7 +1867,7 @@ class StudioTableSeeder extends Seeder
             'city' => '国分寺市',
             'tel' => '042-326-5656',
             'url' => 'http://first-avenue-studio.com/index.html',
-            'image_url' => 'http://first-avenue-studio.com/src/images/logo_sample2.jpg',
+            'image_url' => '../images/logo_sample2.jpg',
         ];
         DB::table('studios')->insert($param);
 
@@ -1927,7 +1927,7 @@ class StudioTableSeeder extends Seeder
             'city' => '北区',
             'tel' => '03-3903-7506',
             'url' => 'http://www.airwave.co.jp/studioj/',
-            'image_url' => 'http://www.airwave.co.jp/studioj/img/top-img.gif',
+            'image_url' => '../images/top-img.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -1975,7 +1975,7 @@ class StudioTableSeeder extends Seeder
             'city' => '中野区',
             'tel' => '03-3336-2226',
             'url' => 'http://www.traffic-st.jp/',
-            'image_url' => 'http://www.traffic-st.jp/image/traffic_logo_sub.gif',
+            'image_url' => '../images/traffic_logo_sub.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -2035,7 +2035,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-3465-6001',
             'url' => 'http://www.takagis.net/',
-            'image_url' => 'http://www.takagis.net/home/img/TAKAGI%27S20%25.GIF',
+            'image_url' => '../images/TAKAGI%27S20%25.GIF',
         ];
         DB::table('studios')->insert($param);
 
@@ -2047,7 +2047,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-6805-2131',
             'url' => 'http://studiofamilia.net/SANCHA/index.html#studiogo',
-            'image_url' => 'http://studiofamilia.net/SANCHA/webpic/stampwhite.gif',
+            'image_url' => '../images/stampwhite.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -2071,7 +2071,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-6909-1181',
             'url' => 'http://jz-studio.jp/karasuyamaten.html',
-            'image_url' => 'http://jz-studio.jp/images/banner4.jpg',
+            'image_url' => '../images/banner4.jpg',
         ];
         DB::table('studios')->insert($param);
 
