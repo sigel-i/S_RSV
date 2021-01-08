@@ -8,7 +8,7 @@
   <meta name="description" content="バンドマン 音楽スタジオ 検索サイト">
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
   <title>
-    @yield('title') | 音楽スタジオ
+    @yield('title') | 音楽スタジオ検索
   </title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
