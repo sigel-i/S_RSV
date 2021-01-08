@@ -504,6 +504,18 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
+            'id'=>42,
+            'name' => 'スタジオ音楽館 デュオお茶の水',
+            'email' => 'info@st-ongakukan.com',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-5207-6071',
+            'url' => 'http://www.st-ongakukan.com/ochabonizu/deuxo.html',
+            'image_url' => '../images/img_header_logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
             'id'=>43,
             'name' => 'サウンドスタジオノア 池尻大橋店',
             'email' => 'test26@studio.jp',
@@ -536,6 +548,18 @@ class StudioTableSeeder extends Seeder
             'tel' => '03-3852-4174',
             'url' => 'https://www.kenmusic.co.jp/KMS/',
             'image_url' => 'https://www.kenmusic.co.jp/KMS/img/kenmusic.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>46,
+            'name' => 'スタジオ音楽館 神田駅前',
+            'email' => 'info@st-ongakukan.com',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-3525-8887',
+            'url' => 'http://www.st-ongakukan.com/kanda/kanda',
+            'image_url' => '../images/img_header_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -792,6 +816,18 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
+            'id'=>68,
+            'name' => 'スタジオ音楽館 阿佐ヶ谷',
+            'email' => 'info@st-ongakukan.com',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-5913-8550',
+            'url' => 'http://www.st-ongakukan.com/asagaya/asagaya.html',
+            'image_url' => '../images/img_header_logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
             'id'=>69,
             'name' => 'BASS ON TOP 中野サンプラザ店',
             'email' => 'test49@studio.jp',
@@ -812,6 +848,18 @@ class StudioTableSeeder extends Seeder
             'tel' => '03-3203-9502',
             'url' => 'http://bassontop.tokyo.jp/band/takadanobaba/',
             'image_url' => '../images/log_under.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>71,
+            'name' => 'スタジオ音楽館 大塚駅前',
+            'email' => 'info@st-ongakukan.com',
+            'pref' => '東京都',
+            'city' => '豊島区',
+            'tel' => '03-5907-3411',
+            'url' => 'http://www.st-ongakukan.com/ootsuka/ootsuka.html',
+            'image_url' => '../images/img_header_logo.png',
         ];
         DB::table('studios')->insert($param);
 
@@ -1620,6 +1668,18 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
+            'id'=>139,
+            'name' => 'Studio Akseli',
+            'email' => 'info@akseli.jp',
+            'pref' => '東京都',
+            'city' => '杉並区',
+            'tel' => '03-6913-5030',
+            'url' => 'http://www.akseli.jp/',
+            'image_url' => '../images/akseli_head.jpg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
             'id'=>140,
             'name' => 'HILL VALLEY STUDIO',
             'email' => 'info@hillvalleystudio.net',
@@ -1968,6 +2028,18 @@ class StudioTableSeeder extends Seeder
         DB::table('studios')->insert($param);
 
         $param = [
+            'id'=>169,
+            'name' => 'スタジオ音楽館 アキバ',
+            'email' => 'info@st-ongakukan.com',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-3256-6955',
+            'url' => 'http://www.st-ongakukan.com/akihabara/akihabara.html',
+            'image_url' => '../images/img_header_logo.png',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
             'id'=>170,
             'name' => 'トラフィック スタジオ',
             'email' => 'test117@studio.jp',
@@ -2035,7 +2107,7 @@ class StudioTableSeeder extends Seeder
             'city' => '世田谷区',
             'tel' => '03-3465-6001',
             'url' => 'http://www.takagis.net/',
-            'image_url' => '../images/TAKAGI%27S20%25.GIF',
+            'image_url' => '../images/TAKAGIS100.gif',
         ];
         DB::table('studios')->insert($param);
 
@@ -2096,6 +2168,18 @@ class StudioTableSeeder extends Seeder
             'tel' => '03-6809-7920',
             'url' => 'https://www.apples-music.com/index.html',
             'image_url' => 'https://www.apples-music.com/img/site-title.svg',
+        ];
+        DB::table('studios')->insert($param);
+
+        $param = [
+            'id'=>181,
+            'name' => 'bumblebee studio',
+            'email' => 'test126@studio.jp',
+            'pref' => '東京都',
+            'city' => '千代田区',
+            'tel' => '03-5209-6655',
+            'url' => 'https://www.bb-studio.biz/?lang=ja',
+            'image_url' => '../images/logo影あり.webp',
         ];
         DB::table('studios')->insert($param);
 
