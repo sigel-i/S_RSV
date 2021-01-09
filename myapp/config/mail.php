@@ -40,7 +40,7 @@ return [
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME','directors.ishii@gmail.com'),
-            'password' => env('MAIL_PASSWORD','dtkmbnpjvpuapqvs'),
+            'password' => env('MAIL_PASSWORD','extvfsmelexowdwc'),
             'timeout' => null,
             'auth_mode' => null,
         ],
