@@ -1,47 +1,37 @@
 @extends('layouts.app')
 
+@section('title', 'パスワード再設定')
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+  <div class="wrap_add">
+            <h1>パスワード再設定</h1>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            @include('error_card_list')
 
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
+            @if (session('status'))
+              <div class="card-text alert alert-success">
+                {{ session('status') }}
+              </div>
+            @endif
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+            <div class="card-text">
+              <form method="POST" action="{{ route('password.email') }}">
+                @csrf
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="md-form">
+                  <label for="email">メールアドレス</label>
+                  <input class="form-control" type="text" id="email" name="email" required>
                 </div>
+                  <div class="center_add">
+                  <button class="btn-flat-border" type="submit">メール送信</button>
+                </div>
+
+              </form>
+
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 @endsection

@@ -23,6 +23,9 @@
   </div>
   <div class="center_add">
   <input type="hidden" name="remember" id="remember" value="on">
+  <div class="text-left"><br>
+    <a href="{{ route('password.request') }}" class="card-text">パスワードを忘れた方</a>
+  </div>
   <button  class="btn-flat-border" type="submit">ログイン</button>
   </div>
 
