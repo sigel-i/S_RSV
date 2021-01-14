@@ -39,6 +39,9 @@
     @csrf
     </form>
     <!-- Dropdown -->
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">問い合わせ</a>
+    </li>
 @endauth
 
   </ul>

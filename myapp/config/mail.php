@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+            'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME','directors.ishii@gmail.com'),
-            'password' => env('MAIL_PASSWORD','extvfsmelexowdwc'),
+            'password' => env('MAIL_PASSWORD','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'),
             'timeout' => null,
             'auth_mode' => null,
         ],
