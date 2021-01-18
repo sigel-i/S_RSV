@@ -17,8 +17,6 @@ Route::get('/sass', function () {
     return view('sass');
 });
 
-Route::get('/', 'StudioController@index');
-
 // Route::get('/', 'csvimportsController@index')->name('csvimport_index');
 
 Route::get('/user',  'UserController@index')
@@ -44,7 +42,8 @@ Route::get('reserve/add', 'ReserveController@add');
 Route::post('/reserve/add', 'ReserveController@create');
 
 
-Route::get('studio/search', 'StudioController@search');
+Route::get('/', 'StudioController@search');
+// Route::get('studio/search', 'StudioController@search');
 
 
 Route::get('studio/comment', 'CommentController@create');

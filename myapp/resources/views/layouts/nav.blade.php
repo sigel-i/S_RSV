@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark elegant-color-dark">
 
-  <a class="navbar-brand" href="/studio/search"><h4>Studio Search</h4></i></a>
+  <a class="navbar-brand" href="/"><h4>Studio Search</h4></i></a>
 
   <ul class="navbar-nav ml-auto">
 
