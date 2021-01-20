@@ -7,7 +7,7 @@
   <meta name="description" content="バンドマン 音楽スタジオ 検索サイト">
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
   <title>
-    @yield('title') | 音楽スタジオ検索
+    @yield('title') 音楽スタジオ検索
   </title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -25,6 +25,12 @@
 
   @include('layouts.nav')
   @yield('content')
+  <div class="footer">
+          <!-- <a href="https://studi-ol.com/terms_of_service" target="_BLANK">利用規約</a> |
+          <a href="https://studi-ol.com/privacy_policy" target="_BLANK">プライバシーポリシー</a> |
+          <a href="https://studi-ol.com/terms_of_trade" target="_BLANK">特定商取引法に基づく表示</a> | -->
+           &copy; 2020 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
+  </div>
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

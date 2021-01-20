@@ -1,5 +1,5 @@
 $bg-black:#5d4037;
-$bg-footer: #444;
+$bg-footer:#212121;
 
 %section-padding {
   padding: 100px 20%;
@@ -266,7 +266,7 @@ textarea {
     // transform: translate(-50%, -43%);
   }
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   // background-position: 70px 50px;
     background: url("../images/2025892_m.jpg") no-repeat fixed 0 0 / cover;
     background-size: cover;
@@ -772,3 +772,9 @@ input[type="radio"]:checked + label:before {
       border-radius: 5px;
   }
 
+  .footer {
+    background: #212121;
+    text-align: right;
+    color: #fff;
+
+  }
