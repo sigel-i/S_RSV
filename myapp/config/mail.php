@@ -33,17 +33,29 @@ return [
     |
     */
 
-    'mailers' => [
-        'smtp' => [
-            'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME','directors.ishii@gmail.com'),
-            'password' => env('MAIL_PASSWORD','extvfsmelexowdwc'),
-            'timeout' => null,
-            'auth_mode' => null,
-        ],
+    // 'mailers' => [
+    //     'smtp' => [
+    //         'transport' => 'smtp',
+    //         'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    //         'port' => env('MAIL_PORT', 587),
+    //         'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    //         'username' => env('MAIL_USERNAME','directors.ishii@gmail.com'),
+    //         'password' => env('MAIL_PASSWORD','extvfsmelexowdwc'),
+    //         'timeout' => null,
+    //         'auth_mode' => null,
+    //     ],
+
+        'mailers' => [
+            'smtp' => [
+                'transport' => 'smtp',
+                'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
+                'port' => env('MAIL_PORT', 587),
+                'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+                'username' => env('MAIL_USERNAME','apikey'),
+                'password' => env('MAIL_PASSWORD','SG.CmWfv1gTTZWZVA02yUZKTg.I03W0UegDHBQol8S_mSaFgWD_KFpXoSMqhNMzaNhkkcextvfsmelexowdwc'),
+                'timeout' => null,
+                'auth_mode' => null,
+            ],
 
         'ses' => [
             'transport' => 'ses',

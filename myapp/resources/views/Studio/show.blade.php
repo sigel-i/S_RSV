@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="summary">
+<div class="review">
   <div class="hit-the-search"><span class="text">音楽スタジオの</span><span class="text">評価とレビュー </span></div>
   <div class="top"></div>
     <ul class="r_ul">

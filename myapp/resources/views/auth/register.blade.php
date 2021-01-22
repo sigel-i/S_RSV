@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="site">
   <form method="POST" action="{{ route('register') }}">
     @csrf
     <div class="wrap_add">
@@ -34,4 +35,5 @@
         </div>
       </div>
   </form>
+</div>
 @endsection

@@ -102,6 +102,9 @@ class StudioController extends Controller
     }
 
     public function show($id) {
+        if(!auth()->check()) {
+            return  redirect('login')->with('flash_message', 'レビューを閲覧するには口コミを投稿してください。');
+            }
         $studio = Studio::findOrFail($id);
         return view('Studio.show', ['studio' => $studio]);
     }

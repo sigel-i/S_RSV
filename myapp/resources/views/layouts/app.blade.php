@@ -22,15 +22,13 @@
 </head>
 
 <body>
-
   @include('layouts.nav')
   @yield('content')
-  <div class="footer">
-          <!-- <a href="https://studi-ol.com/terms_of_service" target="_BLANK">利用規約</a> |
-          <a href="https://studi-ol.com/privacy_policy" target="_BLANK">プライバシーポリシー</a> |
-          <a href="https://studi-ol.com/terms_of_trade" target="_BLANK">特定商取引法に基づく表示</a> | -->
-           &copy; 2020 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
-  </div>
+    <div class="footer">
+            <!-- <a href="" target="_BLANK">利用規約</a> |
+            <a href="" target="_BLANK">プライバシーポリシー</a> |-->
+            &copy; 2020 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
+    </div>
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,5 +42,4 @@
   <!-- <script src="{{ asset('js/app.js') }}"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </body>
-
 </html>

@@ -67,6 +67,7 @@ body {
   color: white;
   background-color: $bg-black;
 }
+
 h1 {
   @media (max-width: 768px) {
     font-size:28px;
@@ -148,16 +149,36 @@ div.wrap div {
   margin: 40px 0;
 }
 
+.site {
+  width: 520px;
+  height: 90vh;
+  top: 60%;
+  left: 50%;
+  vertical-align: middle;
+}
+
+// div.wrap_add {
+//   @media (max-width: 768px) {
+//     padding: 50px 90px 60%;
+//     top: 70%;
+//   }
+//   width: 520px;
+//   position: absolute;
+//   top: 60%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   vertical-align: middle;
+// }
+
 div.wrap_add {
   @media (max-width: 768px) {
     padding: 50px 90px 60%;
     top: 70%;
   }
   width: 520px;
-  position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 10%);
   vertical-align: middle;
 }
 
@@ -441,6 +462,12 @@ table tr:last-child td:last-child {
 
 
 //コメント
+.review {
+  @extend %section-padding;
+  padding:24px 16px 48px;
+  height: 92vh;
+}
+
 .r_ul {
   @media (max-width: 768px) {
     display: block;
