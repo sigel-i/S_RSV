@@ -150,6 +150,10 @@ div.wrap div {
 }
 
 .site {
+  @media (max-width: 768px) {
+    padding: 50px 90px 60%;
+    top: 70%;
+  }
   width: 520px;
   height: 90vh;
   top: 60%;
@@ -172,13 +176,15 @@ div.wrap div {
 
 div.wrap_add {
   @media (max-width: 768px) {
+    width: 500px;
     padding: 50px 90px 60%;
     top: 70%;
+    transform: translate(-28%, 0%);
   }
   width: 520px;
   top: 60%;
   left: 50%;
-  transform: translate(50%, 10%);
+  transform: translate(65%, 10%);
   vertical-align: middle;
 }
 
