@@ -31,6 +31,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/rules', 'HomeController@index');
+Route::get('/privacy', 'HomeController@index2');
+
 Route::get('/room', 'RoomController@index');
 
 Route::get('room/add', 'RoomController@add');

@@ -823,3 +823,31 @@ input[type=radio]:checked + label:before {
   text-align: right;
   color: #fff;
 }
+
+div.rules {
+  padding: 20px;
+  line-height: 200%;
+}
+
+div.rules h2 {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+div.rules h3 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+div.rules h4 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
