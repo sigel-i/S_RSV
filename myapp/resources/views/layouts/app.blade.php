@@ -28,7 +28,7 @@
             <a href="/info">StudioSearchについて</a> |
             <a href="/rules">利用規約</a> |
             <a href="/privacy">プライバシーポリシー</a> |
-            &copy; 2020 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
+            &copy; 2021 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
     </div>
 
   <!-- JQuery -->
