@@ -3,6 +3,7 @@
 @section('title', 'パスワード再設定')
 
 @section('content')
+<div class="site">
   <div class="wrap_add">
             <h1>パスワード再設定</h1>
 
@@ -34,4 +35,5 @@
       </div>
     </div>
   </div>
+</div>
 @endsection

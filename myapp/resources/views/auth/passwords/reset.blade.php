@@ -3,11 +3,11 @@
 @section('title', 'パスワード再設定')
 
 @section('content')
+<div class="site">
   <div class="wrap_add">
             <h1>新しいパスワードを設定</h1>
 
             @include('error_card_list')
-
             <div class="card-text">
               <form method="POST" action="{{ route('password.update') }}">
                 @csrf
@@ -36,4 +36,5 @@
       </div>
     </div>
   </div>
+</div>
 @endsection
