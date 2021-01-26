@@ -33,6 +33,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/rules', 'HomeController@index');
 Route::get('/privacy', 'HomeController@index2');
+Route::get('/info', 'HomeController@index3');
 
 Route::get('/room', 'RoomController@index');
 

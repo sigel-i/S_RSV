@@ -9,7 +9,6 @@
     <div class="wrap">
         <div class="overlay">
         <div class="search-title">Studio Search</div>
-        <h3>バンドで使用するスタジオ検索です。都内限定となっております。</h3>
             <div class="center">
               <label2 for="city">エリアを選択する</label>
               <select name="city" id="city" class="custom-select sources">

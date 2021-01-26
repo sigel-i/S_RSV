@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('privacy');
     }
+
+    public function index3()
+    {
+        return view('info');
+    }
 }

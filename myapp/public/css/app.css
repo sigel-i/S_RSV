@@ -851,3 +851,29 @@ div.rules h4 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+div.info {
+  padding: 20px;
+  line-height: 200%;
+}
+
+div.info h2 {
+  font-size: 24px;
+  color: #ffea00;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+div.info h3 {
+  border-bottom: 1px solid #fff;
+  color: #ffea00;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+div.info h4 {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+}
