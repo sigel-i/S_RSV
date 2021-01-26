@@ -52,7 +52,7 @@ return [
                 'port' => env('MAIL_PORT', 587),
                 'encryption' => env('MAIL_ENCRYPTION', 'tls'),
                 'username' => env('MAIL_USERNAME','apikey'),
-                'password' => env('MAIL_PASSWORD','SG.CmWfv1gTTZWZVA02yUZKTg.I03W0UegDHBQol8S_mSaFgWD_KFpXoSMqhNMzaNhkkcextvfsmelexowdwc'),
+                'password' => env('MAIL_PASSWORD','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'),
                 'timeout' => null,
                 'auth_mode' => null,
             ],
