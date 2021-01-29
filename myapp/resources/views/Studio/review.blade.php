@@ -6,6 +6,12 @@
   <form method="post" action="/studio/review">
     @csrf
     <div class="wrap_add">
+              <!-- フラッシュメッセージ -->
+              @if (session('flash_message'))
+            <div class="flash_message">
+                {{ session('flash_message') }}
+            </div>
+          @endif
         <h1>レビュー投稿</h1>
         @include('error_card_list')
         <div class="center_id">

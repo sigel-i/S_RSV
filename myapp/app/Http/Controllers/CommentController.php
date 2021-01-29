@@ -51,6 +51,9 @@ class CommentController extends Controller
         $comment->user_id = $request->user_id;
         $comment->save();
 
+        $user = User::find($comment->user_id);
+        $user->commentCount = $user->countComments();
+        $user->save();
         $studio = Studio::find($comment->studio_id);
         $studio->average_stars = $studio->averageStars();
         $studio->save();

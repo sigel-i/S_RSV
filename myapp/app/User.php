@@ -52,4 +52,13 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Comments');
     }
+
+    public function countComments() {
+        $comments = $this->comments;
+        $countComments = 0;
+        foreach($comments as $comment) {
+          $countComments = $comments->count();
+        }
+        return $countComments;
+      }
 }

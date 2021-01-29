@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = "studio/search";
+    protected $redirectTo = "/";
 
     /**
      * Create a new controller instance.
@@ -54,6 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'staff' => [''],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'commentCount' => [''],
         ]);
     }
 
@@ -70,6 +71,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'staff' => $data['staff'],
             'password' => Hash::make($data['password']),
+            // 'commentCount' => $data[''],
         ]);
     }
 }

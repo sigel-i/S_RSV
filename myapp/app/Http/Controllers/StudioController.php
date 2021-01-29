@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Studio;
-use App\Reserve;
+use App\User;
 use App\Room;
+use App\Comments;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -103,10 +105,27 @@ class StudioController extends Controller
 
     public function show($id) {
         if(!auth()->check()) {
-            return  redirect('login')->with('flash_message', 'レビューを閲覧するには口コミを投稿してください。');
+            return  redirect('login')->with('flash_message', 'レビューするにはログインしてください。');
             }
         $studio = Studio::findOrFail($id);
         return view('Studio.show', ['studio' => $studio]);
     }
+
+    //レビューを閲覧するのに、口コミ投稿が必要にする場合は、下記を使用
+    // public function show($id) {
+    //     if(!auth()->check()) {
+    //         return  redirect('login')->with('flash_message', 'レビューするにはログインしてください。');
+    //     } else {
+    //         $user = Auth::user();
+    //         $auth_id = Auth::id();
+    //     if($user->commentCount == null) {
+    //         \Session::flash('flash_message', 'レビューを閲覧するには口コミを投稿してください。');
+    //         return  redirect('/studios/' . $id . '/review/');
+    //         }
+    //     $studio = Studio::findOrFail($id);
+    //     return view('Studio.show', ['studio' => $studio]);
+    //     }
+    // }
+
 
 }
