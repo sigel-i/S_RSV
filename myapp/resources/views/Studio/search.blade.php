@@ -8,7 +8,8 @@
     <title>{{ config('app.name') }}</title>
     <div class="wrap">
         <div class="overlay">
-        <div class="search-title">Studio Search</div>
+        <div class="search-title">Studio Search<br><h1>東京都内 音楽スタジオ検索</h1></div><br>
+
             <div class="center">
               <label2 for="city">エリアを選択する</label>
               <select name="city" id="city" class="custom-select sources">
