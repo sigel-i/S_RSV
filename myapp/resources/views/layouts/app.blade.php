@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="バンド練習,バンドマン,東京,都内,音楽スタジオ,検索,スタジオ練習,リハーサルスタジオ,都内音楽スタジオ検索なら、studiosearch">
+  <meta name="description" content="音楽スタジオ,スタジオ検索,スタジオ練習,バンド練習,バンドマン,東京スタジオ,都内スタジオ,リハーサルスタジオ,都内音楽スタジオ検索なら、studiosearch">
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
   <title>
     @yield('title') 音楽スタジオ検索 | StudioSearch
