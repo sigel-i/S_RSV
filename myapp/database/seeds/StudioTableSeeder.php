@@ -753,19 +753,6 @@ class StudioTableSeeder extends Seeder
             DB::table('studios')->insert($param);
 
             $param = [
-            'id' =>58,
-            'name' =>'リンキィディンクスタジオ荻窪店',
-            'email' =>'test38@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'杉並区',
-            'tel' =>'03-3393-3359',
-            'url' =>'https://rinky.info/studio/ogikubo/',
-            'image_url' =>'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
-            'station' =>'荻窪駅徒歩2分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
             'id' =>59,
             'name' =>'リンキィディンクスタジオ西荻店',
             'email' =>'test39@studio.jp',
@@ -801,32 +788,6 @@ class StudioTableSeeder extends Seeder
             'url' =>'https://rinky.info/studio/ores/',
             'image_url' =>'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
             'station' =>'吉祥寺駅徒歩2分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
-            'id' =>62,
-            'name' =>'リンキィディンクスタジオ町田店',
-            'email' =>'test42@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'町田市',
-            'tel' =>'042-723-6951',
-            'url' =>'https://rinky.info/studio/machida/',
-            'image_url' =>'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
-            'station' =>'町田駅徒歩2分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
-            'id' =>63,
-            'name' =>'リンキィディンクスタジオ八王子1st店',
-            'email' =>'test43@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'八王子市',
-            'tel' =>'042-626-2282',
-            'url' =>'https://rinky.info/studio/hachioji1/',
-            'image_url' =>'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
-            'station' =>'八王子駅徒歩2分',
             ];
             DB::table('studios')->insert($param);
 
@@ -1494,19 +1455,6 @@ class StudioTableSeeder extends Seeder
             DB::table('studios')->insert($param);
 
             $param = [
-            'id' =>115,
-            'name' =>'スタジオBEN辿',
-            'email' =>'test77@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'狛江市',
-            'tel' =>'03-5438-2302',
-            'url' =>'http://www.benten-st.com/index.html',
-            'image_url' =>'../images/benten_banner.png',
-            'station' =>'狛江駅徒歩30秒',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
             'id' =>116,
             'name' =>'STUDIO FORTE',
             'email' =>'test78@studio.jp',
@@ -1611,19 +1559,6 @@ class StudioTableSeeder extends Seeder
             DB::table('studios')->insert($param);
 
             $param = [
-            'id' =>124,
-            'name' =>'シュールサウンドスタジオ',
-            'email' =>'studio_info@s-u-r.co.jp',
-            'pref' =>'東京都',
-            'city' =>'渋谷区',
-            'tel' =>'03-3378-1555',
-            'url' =>'https://s-u-r.co.jp/index.html',
-            'image_url' =>'https://s-u-r.co.jp/parts/sub_top.jpg',
-            'station' =>'幡ヶ谷駅徒歩3分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
             'id' =>125,
             'name' =>'サウンドスタジオM小岩店',
             'email' =>'test84@studio.jp',
@@ -1646,19 +1581,6 @@ class StudioTableSeeder extends Seeder
             'url' =>'https://soundstudio-m.com/ichinoe/index.html',
             'image_url' =>'../images/header_logo_white.svg',
             'station' =>'一之江駅徒歩10分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
-            'id' =>127,
-            'name' =>'Studio Leda',
-            'email' =>'info@studioleda.com',
-            'pref' =>'東京都',
-            'city' =>'武蔵野市',
-            'tel' =>'0422-23-7227',
-            'url' =>'https://www.studioleda.com/index.html',
-            'image_url' =>'https://www.studioleda.com/images/logo.png',
-            'station' =>'吉祥寺駅徒歩6分',
             ];
             DB::table('studios')->insert($param);
 
@@ -1858,19 +1780,6 @@ class StudioTableSeeder extends Seeder
             DB::table('studios')->insert($param);
 
             $param = [
-            'id' =>143,
-            'name' =>'STUDIO PIT INN',
-            'email' =>'test95@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'新宿区',
-            'tel' =>'03-3354-2067',
-            'url' =>'http://marmie.heteml.jp/pit-inn/studio/',
-            'image_url' =>'http://marmie.heteml.jp/pit-inn/studio/themes/artnomad_v2/images/logo3.jpg',
-            'station' =>'新宿三丁目駅徒歩1分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
             'id' =>144,
             'name' =>'Sound Studio Vantage',
             'email' =>'test96@studio.jp',
@@ -1880,19 +1789,6 @@ class StudioTableSeeder extends Seeder
             'url' =>'http://www.studiovantage.jp/',
             'image_url' =>'../images/vantage_logo.gif',
             'station' =>'大久保駅徒歩3分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
-            'id' =>145,
-            'name' =>'SOUND STUDIO CRUE',
-            'email' =>'test97@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'新宿区',
-            'tel' =>'03-3352-8530',
-            'url' =>'http://studio-crue.com/',
-            'image_url' =>'../images/crue_logo.png',
-            'station' =>'新宿駅徒歩10分',
             ];
             DB::table('studios')->insert($param);
 
@@ -2062,19 +1958,6 @@ class StudioTableSeeder extends Seeder
             'url' =>'http://bws.music.coocan.jp/',
             'image_url' =>'../images/666897_m.jpg',
             'station' =>'曳舟駅徒歩1分',
-            ];
-            DB::table('studios')->insert($param);
-
-            $param = [
-            'id' =>159,
-            'name' =>'SOUND STUDIO CROSSROAD',
-            'email' =>'test106@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'国立市',
-            'tel' =>'042-577-3521',
-            'url' =>'http://crossroad-studio.com/',
-            'image_url' =>'../images/crossroad_logo.png',
-            'station' =>'国立駅徒歩3分',
             ];
             DB::table('studios')->insert($param);
 
