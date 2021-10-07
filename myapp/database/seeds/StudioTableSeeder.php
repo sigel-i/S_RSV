@@ -11,8 +11,9 @@ class StudioTableSeeder extends Seeder
      */
     public function run()
     {
+
             $param = [
-            'id' =>2,
+            'id' =>1,
             'name' =>'サウンドスタジオノア 渋谷1号店',
             'email' =>'test2@studio.jp',
             'pref' =>'東京都',
