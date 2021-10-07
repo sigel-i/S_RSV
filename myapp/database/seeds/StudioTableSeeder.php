@@ -11,19 +11,6 @@ class StudioTableSeeder extends Seeder
      */
     public function run()
     {
-        $param = [
-            'id' =>1,
-            'name' =>'リンキィディンクスタジオお茶の水・神保町',
-            'email' =>'test@studio.jp',
-            'pref' =>'東京都',
-            'city' =>'千代田区',
-            'tel' =>'03-3294-6909',
-            'url' =>'https://rinky.info/studio/ochanomizu/',
-            'image_url' =>'https://rinky.info/2019new/wp-content/themes/rinkydink/img/rinkydink_logo_word.svg',
-            'station' =>'神保町駅徒歩1分',
-            ];
-            DB::table('studios')->insert($param);
-
             $param = [
             'id' =>2,
             'name' =>'サウンドスタジオノア 渋谷1号店',
