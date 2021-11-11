@@ -69,7 +69,7 @@ class StudioController extends Controller
 
     public function add(Request $request)
     {
-        return view('studio/add');
+        return view('Studio.add');
     }
 
     public function create(Request $request)
@@ -80,7 +80,7 @@ class StudioController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $studio->fill($form)->save();
-        return redirect('studio/add');
+        return redirect('Studio.add');
     }
 
     // public function post(Request $request)
