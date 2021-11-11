@@ -30,6 +30,6 @@ class RoomController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $room->fill($form)->save();
-        return redirect('Room/add');
+        return redirect('room/add');
     }
 }
