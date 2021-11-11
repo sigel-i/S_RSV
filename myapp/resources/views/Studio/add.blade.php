@@ -45,6 +45,10 @@
                 <label for="image_url">トップページ画像URL</label>
                 <input type="text" id="image_url" name="image_url" required value="{{ old('image_url') }}">
             </div>
+            <div>
+                <label for="station">最寄駅</label>
+                <input type="text" id="station" name="station" required value="{{ old('station') }}">
+            </div>
             <div class="center_add">
                 <button class="btn-flat-border" type="submit">新規登録</button>
             </div>
