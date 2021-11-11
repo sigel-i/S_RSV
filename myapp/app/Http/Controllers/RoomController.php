@@ -19,7 +19,7 @@ class RoomController extends Controller
     public function add(Request $request)
     {
         $studios = Studio::with('rooms')->get();
-        return view('room.add', ['studios' => $studios,]);
+        return view('Room/add', ['studios' => $studios,]);
     }
 
     public function create(Request $request)
@@ -30,6 +30,6 @@ class RoomController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $room->fill($form)->save();
-        return redirect('room/add');
+        return redirect('Room/add');
     }
 }
