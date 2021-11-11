@@ -69,7 +69,7 @@ class StudioController extends Controller
 
     public function add(Request $request)
     {
-        return view('studio.add');
+        return view('studio/add');
     }
 
     public function create(Request $request)
