@@ -2,15 +2,18 @@
 <html lang="ja">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190895653-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DXVGS8982"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-190895653-2');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6DXVGS8982');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -34,12 +37,12 @@
 <body>
   @include('layouts.nav')
   @yield('content')
-    <div class="footer">
-            <a href="/info">StudioSearchについて</a> |
-            <a href="/rules">利用規約</a> |
-            <a href="/privacy">プライバシーポリシー</a> |
-            &copy; 2021 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
-    </div>
+  <div class="footer">
+    <a href="/info">StudioSearchについて</a> |
+    <a href="/rules">利用規約</a> |
+    <a href="/privacy">プライバシーポリシー</a> |
+    &copy; 2021 <a href="https://director-s.jp/" target="_blank">Directors, Inc.</a> All Rights Reserved.
+  </div>
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -51,6 +54,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('js/app.js') }}"></script>
 </body>
+
 </html>
